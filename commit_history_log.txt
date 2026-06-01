@@ -42,3 +42,5 @@ Commit at 2026-06-02T12:45:01 - refactor(store): add multi-case file switching r
 Commit at 2026-06-02T10:11:10 - docs(readme): expand module architecture breakdown [2026-06-02T10:11:10]
 Commit at 2026-06-02T19:41:24 - feat(auth): implement security clearance access check [2026-06-02T19:41:24]
 Commit at 2026-06-02T10:14:59 - feat(auth): implement security clearance access check [2026-06-02T10:14:59]
+Commit at 2026-06-02T18:52:04 - feat(ui): update storeiq black glassmorphic styling [2026-06-02T18:52:04]
+Commit at 2026-06-01T16:00:56 - feat(ui): update storeiq black glassmorphic styling [2026-06-01T16:00:56]
