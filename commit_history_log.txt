@@ -1,3 +1,4 @@
 Commit at 2026-06-01T15:19:28 - fix(layout): adjust header pill badge alignment [2026-06-01T15:19:28]
 Commit at 2026-06-01T18:25:11 - feat(clues): add forensic EXIF metadata correlation [2026-06-01T18:25:11]
 Commit at 2026-06-01T13:46:07 - feat(reports): separate web preview dashboard from printable PDF [2026-06-01T13:46:07]
+Commit at 2026-06-01T13:17:38 - fix(sidebar): resolve scrollbar overflow isolation [2026-06-01T13:17:38]
