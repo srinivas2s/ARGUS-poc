@@ -40,3 +40,4 @@ Commit at 2026-06-11T10:54:53 - feat(reports): separate web preview dashboard fr
 Commit at 2026-06-02T09:47:46 - feat(engine): optimize relational graph entity query performance [2026-06-02T09:47:46]
 Commit at 2026-06-02T12:45:01 - refactor(store): add multi-case file switching registry [2026-06-02T12:45:01]
 Commit at 2026-06-02T10:11:10 - docs(readme): expand module architecture breakdown [2026-06-02T10:11:10]
+Commit at 2026-06-02T19:41:24 - feat(auth): implement security clearance access check [2026-06-02T19:41:24]
