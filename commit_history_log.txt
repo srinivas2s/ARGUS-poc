@@ -57,3 +57,4 @@ Commit at 2026-06-03T15:00:22 - refactor(store): add multi-case file switching r
 Commit at 2026-06-04T20:15:47 - feat(engine): optimize relational graph entity query performance [2026-06-04T20:15:47]
 Commit at 2026-06-05T12:05:15 - docs(readme): expand module architecture breakdown [2026-06-05T12:05:15]
 Commit at 2026-06-05T11:32:46 - refactor(store): add multi-case file switching registry [2026-06-05T11:32:46]
+Commit at 2026-06-05T14:06:13 - docs(readme): expand module architecture breakdown [2026-06-05T14:06:13]
