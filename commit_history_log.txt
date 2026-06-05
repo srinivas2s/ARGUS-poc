@@ -55,3 +55,4 @@ Commit at 2026-06-03T14:12:05 - feat(reports): separate web preview dashboard fr
 Commit at 2026-06-03T12:12:05 - feat(clues): add forensic EXIF metadata correlation [2026-06-03T12:12:05]
 Commit at 2026-06-03T15:00:22 - refactor(store): add multi-case file switching registry [2026-06-03T15:00:22]
 Commit at 2026-06-04T20:15:47 - feat(engine): optimize relational graph entity query performance [2026-06-04T20:15:47]
+Commit at 2026-06-05T12:05:15 - docs(readme): expand module architecture breakdown [2026-06-05T12:05:15]
