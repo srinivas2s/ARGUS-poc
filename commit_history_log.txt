@@ -10,3 +10,4 @@ Commit at 2026-06-02T20:25:50 - style(theme): enhance dark cyber grid background
 Commit at 2026-06-03T11:37:29 - refactor(store): add multi-case file switching registry [2026-06-03T11:37:29]
 Commit at 2026-06-03T21:22:47 - refactor(store): add multi-case file switching registry [2026-06-03T21:22:47]
 Commit at 2026-06-04T19:29:16 - feat(auth): implement security clearance access check [2026-06-04T19:29:16]
+Commit at 2026-06-05T16:25:02 - fix(sidebar): resolve scrollbar overflow isolation [2026-06-05T16:25:02]
