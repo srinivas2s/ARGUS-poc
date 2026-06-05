@@ -12,3 +12,4 @@ Commit at 2026-06-03T21:22:47 - refactor(store): add multi-case file switching r
 Commit at 2026-06-04T19:29:16 - feat(auth): implement security clearance access check [2026-06-04T19:29:16]
 Commit at 2026-06-05T16:25:02 - fix(sidebar): resolve scrollbar overflow isolation [2026-06-05T16:25:02]
 Commit at 2026-06-05T10:49:42 - fix(sidebar): resolve scrollbar overflow isolation [2026-06-05T10:49:42]
+Commit at 2026-06-05T14:14:56 - docs(readme): expand module architecture breakdown [2026-06-05T14:14:56]
