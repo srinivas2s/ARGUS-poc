@@ -14,3 +14,4 @@ Commit at 2026-06-05T16:25:02 - fix(sidebar): resolve scrollbar overflow isolati
 Commit at 2026-06-05T10:49:42 - fix(sidebar): resolve scrollbar overflow isolation [2026-06-05T10:49:42]
 Commit at 2026-06-05T14:14:56 - docs(readme): expand module architecture breakdown [2026-06-05T14:14:56]
 Commit at 2026-06-05T17:32:21 - feat(engine): optimize relational graph entity query performance [2026-06-05T17:32:21]
+Commit at 2026-06-06T10:24:29 - refactor(store): add multi-case file switching registry [2026-06-06T10:24:29]
