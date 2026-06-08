@@ -74,3 +74,4 @@ Commit at 2026-06-07T14:24:14 - feat(engine): optimize relational graph entity q
 Commit at 2026-06-08T12:30:55 - feat(auth): implement security clearance access check [2026-06-08T12:30:55]
 Commit at 2026-06-08T17:47:19 - feat(auth): implement security clearance access check [2026-06-08T17:47:19]
 Commit at 2026-06-08T21:47:54 - fix(layout): adjust header pill badge alignment [2026-06-08T21:47:54]
+Commit at 2026-06-08T19:47:41 - feat(clues): add forensic EXIF metadata correlation [2026-06-08T19:47:41]
