@@ -76,3 +76,4 @@ Commit at 2026-06-08T17:47:19 - feat(auth): implement security clearance access 
 Commit at 2026-06-08T21:47:54 - fix(layout): adjust header pill badge alignment [2026-06-08T21:47:54]
 Commit at 2026-06-08T19:47:41 - feat(clues): add forensic EXIF metadata correlation [2026-06-08T19:47:41]
 Commit at 2026-06-08T12:26:40 - feat(reports): separate web preview dashboard from printable PDF [2026-06-08T12:26:40]
+Commit at 2026-06-08T10:50:41 - refactor(store): add multi-case file switching registry [2026-06-08T10:50:41]
