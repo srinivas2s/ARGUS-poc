@@ -79,3 +79,4 @@ Commit at 2026-06-08T12:26:40 - feat(reports): separate web preview dashboard fr
 Commit at 2026-06-08T10:50:41 - refactor(store): add multi-case file switching registry [2026-06-08T10:50:41]
 Commit at 2026-06-09T15:18:00 - docs(readme): expand module architecture breakdown [2026-06-09T15:18:00]
 Commit at 2026-06-09T18:17:20 - feat(reports): separate web preview dashboard from printable PDF [2026-06-09T18:17:20]
+Commit at 2026-06-09T14:28:16 - feat(auth): implement security clearance access check [2026-06-09T14:28:16]
