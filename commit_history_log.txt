@@ -25,3 +25,4 @@ Commit at 2026-06-09T18:46:28 - fix(layout): adjust header pill badge alignment 
 Commit at 2026-06-09T13:27:24 - feat(engine): optimize relational graph entity query performance [2026-06-09T13:27:24]
 Commit at 2026-06-09T09:44:28 - feat(clues): add forensic EXIF metadata correlation [2026-06-09T09:44:28]
 Commit at 2026-06-09T15:44:13 - fix(layout): adjust header pill badge alignment [2026-06-09T15:44:13]
+Commit at 2026-06-09T16:09:49 - refactor(store): add multi-case file switching registry [2026-06-09T16:09:49]
