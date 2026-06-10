@@ -85,3 +85,4 @@ Commit at 2026-06-09T14:32:03 - feat(engine): optimize relational graph entity q
 Commit at 2026-06-10T11:28:07 - feat(reports): separate web preview dashboard from printable PDF [2026-06-10T11:28:07]
 Commit at 2026-06-10T10:07:39 - fix(layout): adjust header pill badge alignment [2026-06-10T10:07:39]
 Commit at 2026-06-10T12:36:02 - fix(sidebar): resolve scrollbar overflow isolation [2026-06-10T12:36:02]
+Commit at 2026-06-10T21:55:53 - feat(engine): optimize relational graph entity query performance [2026-06-10T21:55:53]
