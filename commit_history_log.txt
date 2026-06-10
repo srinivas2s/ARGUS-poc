@@ -28,3 +28,4 @@ Commit at 2026-06-09T15:44:13 - fix(layout): adjust header pill badge alignment 
 Commit at 2026-06-09T16:09:49 - refactor(store): add multi-case file switching registry [2026-06-09T16:09:49]
 Commit at 2026-06-10T13:49:04 - feat(clues): add forensic EXIF metadata correlation [2026-06-10T13:49:04]
 Commit at 2026-06-10T16:20:47 - fix(sidebar): resolve scrollbar overflow isolation [2026-06-10T16:20:47]
+Commit at 2026-06-10T20:56:19 - fix(sidebar): resolve scrollbar overflow isolation [2026-06-10T20:56:19]
