@@ -36,3 +36,4 @@ Commit at 2026-06-11T09:09:44 - fix(sidebar): resolve scrollbar overflow isolati
 Commit at 2026-06-11T19:31:53 - feat(ui): update storeiq black glassmorphic styling [2026-06-11T19:31:53]
 Commit at 2026-06-11T12:25:27 - feat(ui): update storeiq black glassmorphic styling [2026-06-11T12:25:27]
 Commit at 2026-06-11T14:47:38 - fix(sidebar): resolve scrollbar overflow isolation [2026-06-11T14:47:38]
+Commit at 2026-06-11T10:54:53 - feat(reports): separate web preview dashboard from printable PDF [2026-06-11T10:54:53]
