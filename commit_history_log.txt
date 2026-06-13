@@ -88,3 +88,4 @@ Commit at 2026-06-10T12:36:02 - fix(sidebar): resolve scrollbar overflow isolati
 Commit at 2026-06-10T21:55:53 - feat(engine): optimize relational graph entity query performance [2026-06-10T21:55:53]
 Commit at 2026-06-10T17:36:08 - feat(clues): add forensic EXIF metadata correlation [2026-06-10T17:36:08]
 Commit at 2026-06-12T09:39:02 - refactor(store): add multi-case file switching registry [2026-06-12T09:39:02]
+Commit at 2026-06-13T20:43:12 - feat(ui): update storeiq black glassmorphic styling [2026-06-13T20:43:12]
