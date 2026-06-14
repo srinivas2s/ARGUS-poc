@@ -95,3 +95,4 @@ Commit at 2026-06-13T15:47:21 - style(theme): enhance dark cyber grid background
 Commit at 2026-06-14T17:23:48 - feat(clues): add forensic EXIF metadata correlation [2026-06-14T17:23:48]
 Commit at 2026-06-14T19:21:34 - feat(engine): optimize relational graph entity query performance [2026-06-14T19:21:34]
 Commit at 2026-06-14T10:32:09 - feat(ui): update storeiq black glassmorphic styling [2026-06-14T10:32:09]
+Commit at 2026-06-14T11:23:48 - feat(engine): optimize relational graph entity query performance [2026-06-14T11:23:48]
