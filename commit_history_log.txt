@@ -99,3 +99,4 @@ Commit at 2026-06-14T11:23:48 - feat(engine): optimize relational graph entity q
 Commit at 2026-06-14T17:12:55 - feat(ui): update storeiq black glassmorphic styling [2026-06-14T17:12:55]
 Commit at 2026-06-14T13:59:08 - docs(readme): expand module architecture breakdown [2026-06-14T13:59:08]
 Commit at 2026-06-15T18:34:35 - docs(readme): expand module architecture breakdown [2026-06-15T18:34:35]
+Commit at 2026-06-15T12:21:41 - docs(readme): expand module architecture breakdown [2026-06-15T12:21:41]
