@@ -110,3 +110,4 @@ Commit at 2026-06-17T16:43:36 - style(theme): enhance dark cyber grid background
 Commit at 2026-06-17T16:35:38 - refactor(store): add multi-case file switching registry [2026-06-17T16:35:38]
 Commit at 2026-06-17T15:07:02 - refactor(store): add multi-case file switching registry [2026-06-17T15:07:02]
 Commit at 2026-06-17T09:29:20 - fix(sidebar): resolve scrollbar overflow isolation [2026-06-17T09:29:20]
+Commit at 2026-06-17T15:53:40 - feat(ui): update storeiq black glassmorphic styling [2026-06-17T15:53:40]
