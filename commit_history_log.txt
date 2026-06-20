@@ -116,3 +116,4 @@ Commit at 2026-06-19T12:17:34 - feat(engine): optimize relational graph entity q
 Commit at 2026-06-20T16:02:19 - feat(clues): add forensic EXIF metadata correlation [2026-06-20T16:02:19]
 Commit at 2026-06-20T14:25:11 - docs(readme): expand module architecture breakdown [2026-06-20T14:25:11]
 Commit at 2026-06-20T10:46:21 - feat(clues): add forensic EXIF metadata correlation [2026-06-20T10:46:21]
+Commit at 2026-06-20T19:21:21 - feat(reports): separate web preview dashboard from printable PDF [2026-06-20T19:21:21]
