@@ -125,3 +125,4 @@ Commit at 2026-06-22T13:28:41 - fix(sidebar): resolve scrollbar overflow isolati
 Commit at 2026-06-22T15:21:50 - docs(readme): expand module architecture breakdown [2026-06-22T15:21:50]
 Commit at 2026-06-22T10:10:49 - style(theme): enhance dark cyber grid background contrast [2026-06-22T10:10:49]
 Commit at 2026-06-22T17:53:46 - feat(engine): optimize relational graph entity query performance [2026-06-22T17:53:46]
+Commit at 2026-06-22T20:01:49 - fix(sidebar): resolve scrollbar overflow isolation [2026-06-22T20:01:49]
