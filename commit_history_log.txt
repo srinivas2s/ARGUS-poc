@@ -121,3 +121,4 @@ Commit at 2026-06-20T09:01:43 - fix(sidebar): resolve scrollbar overflow isolati
 Commit at 2026-06-21T18:12:12 - fix(layout): adjust header pill badge alignment [2026-06-21T18:12:12]
 Commit at 2026-06-21T11:41:00 - feat(engine): optimize relational graph entity query performance [2026-06-21T11:41:00]
 Commit at 2026-06-22T16:56:08 - feat(engine): optimize relational graph entity query performance [2026-06-22T16:56:08]
+Commit at 2026-06-22T13:28:41 - fix(sidebar): resolve scrollbar overflow isolation [2026-06-22T13:28:41]
