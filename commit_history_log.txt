@@ -131,3 +131,4 @@ Commit at 2026-06-24T18:12:30 - feat(clues): add forensic EXIF metadata correlat
 Commit at 2026-06-24T11:15:04 - feat(reports): separate web preview dashboard from printable PDF [2026-06-24T11:15:04]
 Commit at 2026-06-24T10:45:48 - feat(engine): optimize relational graph entity query performance [2026-06-24T10:45:48]
 Commit at 2026-06-24T20:36:15 - feat(engine): optimize relational graph entity query performance [2026-06-24T20:36:15]
+Commit at 2026-06-24T18:32:17 - feat(ui): update storeiq black glassmorphic styling [2026-06-24T18:32:17]
