@@ -135,3 +135,4 @@ Commit at 2026-06-24T18:32:17 - feat(ui): update storeiq black glassmorphic styl
 Commit at 2026-06-24T09:11:49 - refactor(store): add multi-case file switching registry [2026-06-24T09:11:49]
 Commit at 2026-06-26T13:39:35 - feat(clues): add forensic EXIF metadata correlation [2026-06-26T13:39:35]
 Commit at 2026-06-26T14:47:35 - fix(layout): adjust header pill badge alignment [2026-06-26T14:47:35]
+Commit at 2026-06-26T18:22:07 - feat(engine): optimize relational graph entity query performance [2026-06-26T18:22:07]
