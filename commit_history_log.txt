@@ -140,3 +140,4 @@ Commit at 2026-06-26T13:49:24 - feat(reports): separate web preview dashboard fr
 Commit at 2026-06-26T19:21:58 - refactor(store): add multi-case file switching registry [2026-06-26T19:21:58]
 Commit at 2026-06-28T13:20:15 - fix(layout): adjust header pill badge alignment [2026-06-28T13:20:15]
 Commit at 2026-06-28T12:18:10 - fix(sidebar): resolve scrollbar overflow isolation [2026-06-28T12:18:10]
+Commit at 2026-06-28T13:55:01 - style(theme): enhance dark cyber grid background contrast [2026-06-28T13:55:01]
