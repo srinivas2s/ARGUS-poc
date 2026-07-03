@@ -159,3 +159,4 @@ Commit at 2026-07-03T21:52:00 - refactor(store): add multi-case file switching r
 Commit at 2026-07-03T10:12:18 - feat(engine): optimize relational graph entity query performance [2026-07-03T10:12:18]
 Commit at 2026-07-03T20:12:30 - feat(clues): add forensic EXIF metadata correlation [2026-07-03T20:12:30]
 Commit at 2026-07-03T15:55:21 - docs(readme): expand module architecture breakdown [2026-07-03T15:55:21]
+Commit at 2026-07-03T20:11:01 - feat(engine): optimize relational graph entity query performance [2026-07-03T20:11:01]
