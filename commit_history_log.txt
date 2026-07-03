@@ -155,3 +155,4 @@ Commit at 2026-07-02T12:26:35 - fix(layout): adjust header pill badge alignment 
 Commit at 2026-07-02T20:06:19 - feat(reports): separate web preview dashboard from printable PDF [2026-07-02T20:06:19]
 Commit at 2026-07-02T12:34:05 - fix(layout): adjust header pill badge alignment [2026-07-02T12:34:05]
 Commit at 2026-07-02T17:13:13 - fix(sidebar): resolve scrollbar overflow isolation [2026-07-02T17:13:13]
+Commit at 2026-07-03T21:52:00 - refactor(store): add multi-case file switching registry [2026-07-03T21:52:00]
