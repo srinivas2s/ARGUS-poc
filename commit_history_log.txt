@@ -157,3 +157,4 @@ Commit at 2026-07-02T12:34:05 - fix(layout): adjust header pill badge alignment 
 Commit at 2026-07-02T17:13:13 - fix(sidebar): resolve scrollbar overflow isolation [2026-07-02T17:13:13]
 Commit at 2026-07-03T21:52:00 - refactor(store): add multi-case file switching registry [2026-07-03T21:52:00]
 Commit at 2026-07-03T10:12:18 - feat(engine): optimize relational graph entity query performance [2026-07-03T10:12:18]
+Commit at 2026-07-03T20:12:30 - feat(clues): add forensic EXIF metadata correlation [2026-07-03T20:12:30]
