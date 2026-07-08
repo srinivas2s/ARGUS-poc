@@ -168,3 +168,4 @@ Commit at 2026-07-05T11:58:45 - feat(engine): optimize relational graph entity q
 Commit at 2026-07-06T13:14:03 - docs(readme): expand module architecture breakdown [2026-07-06T13:14:03]
 Commit at 2026-07-06T18:03:12 - feat(clues): add forensic EXIF metadata correlation [2026-07-06T18:03:12]
 Commit at 2026-07-06T21:24:17 - docs(readme): expand module architecture breakdown [2026-07-06T21:24:17]
+Commit at 2026-07-08T15:57:27 - docs(readme): expand module architecture breakdown [2026-07-08T15:57:27]
