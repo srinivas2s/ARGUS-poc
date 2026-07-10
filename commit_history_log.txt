@@ -175,3 +175,4 @@ Commit at 2026-07-09T16:23:10 - fix(sidebar): resolve scrollbar overflow isolati
 Commit at 2026-07-10T20:29:48 - feat(auth): implement security clearance access check [2026-07-10T20:29:48]
 Commit at 2026-07-10T21:18:53 - docs(readme): expand module architecture breakdown [2026-07-10T21:18:53]
 Commit at 2026-07-10T09:02:59 - feat(ui): update storeiq black glassmorphic styling [2026-07-10T09:02:59]
+Commit at 2026-07-10T20:06:43 - feat(clues): add forensic EXIF metadata correlation [2026-07-10T20:06:43]
