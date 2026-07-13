@@ -180,3 +180,4 @@ Commit at 2026-07-11T09:41:30 - feat(engine): optimize relational graph entity q
 Commit at 2026-07-11T12:18:16 - feat(engine): optimize relational graph entity query performance [2026-07-11T12:18:16]
 Commit at 2026-07-11T11:35:53 - feat(engine): optimize relational graph entity query performance [2026-07-11T11:35:53]
 Commit at 2026-07-12T12:43:30 - feat(clues): add forensic EXIF metadata correlation [2026-07-12T12:43:30]
+Commit at 2026-07-13T16:45:41 - feat(engine): optimize relational graph entity query performance [2026-07-13T16:45:41]
