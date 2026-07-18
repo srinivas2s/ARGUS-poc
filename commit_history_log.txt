@@ -194,3 +194,4 @@ Commit at 2026-07-16T21:15:31 - fix(sidebar): resolve scrollbar overflow isolati
 Commit at 2026-07-17T21:16:13 - fix(sidebar): resolve scrollbar overflow isolation [2026-07-17T21:16:13]
 Commit at 2026-07-18T12:55:41 - style(theme): enhance dark cyber grid background contrast [2026-07-18T12:55:41]
 Commit at 2026-07-18T16:08:05 - docs(readme): expand module architecture breakdown [2026-07-18T16:08:05]
+Commit at 2026-07-18T09:48:40 - feat(reports): separate web preview dashboard from printable PDF [2026-07-18T09:48:40]
