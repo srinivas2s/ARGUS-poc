@@ -209,3 +209,4 @@ Commit at 2026-07-20T15:45:27 - feat(ui): update storeiq black glassmorphic styl
 Commit at 2026-07-20T10:07:59 - docs(readme): expand module architecture breakdown [2026-07-20T10:07:59]
 Commit at 2026-07-20T15:28:17 - docs(readme): expand module architecture breakdown [2026-07-20T15:28:17]
 Commit at 2026-07-20T10:32:18 - feat(clues): add forensic EXIF metadata correlation [2026-07-20T10:32:18]
+Commit at 2026-07-20T19:50:40 - feat(engine): optimize relational graph entity query performance [2026-07-20T19:50:40]
