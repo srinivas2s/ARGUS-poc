@@ -216,3 +216,4 @@ Commit at 2026-07-23T11:06:39 - style(theme): enhance dark cyber grid background
 Commit at 2026-07-24T20:58:25 - style(theme): enhance dark cyber grid background contrast [2026-07-24T20:58:25]
 Commit at 2026-07-24T09:49:06 - style(theme): enhance dark cyber grid background contrast [2026-07-24T09:49:06]
 Commit at 2026-07-25T14:50:40 - feat(reports): separate web preview dashboard from printable PDF [2026-07-25T14:50:40]
+Commit at 2026-07-26T19:42:11 - fix(layout): adjust header pill badge alignment [2026-07-26T19:42:11]
