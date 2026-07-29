@@ -233,3 +233,4 @@ Commit at 2026-07-29T18:14:57 - feat(engine): optimize relational graph entity q
 Commit at 2026-07-29T17:12:00 - feat(clues): add forensic EXIF metadata correlation [2026-07-29T17:12:00]
 Commit at 2026-07-29T20:30:49 - fix(sidebar): resolve scrollbar overflow isolation [2026-07-29T20:30:49]
 Commit at 2026-07-29T21:16:36 - docs(readme): expand module architecture breakdown [2026-07-29T21:16:36]
+Commit at 2026-07-29T09:03:19 - fix(sidebar): resolve scrollbar overflow isolation [2026-07-29T09:03:19]
