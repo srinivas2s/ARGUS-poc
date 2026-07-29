@@ -229,3 +229,4 @@ Commit at 2026-07-28T16:42:40 - fix(sidebar): resolve scrollbar overflow isolati
 Commit at 2026-07-28T10:25:52 - fix(sidebar): resolve scrollbar overflow isolation [2026-07-28T10:25:52]
 Commit at 2026-07-28T11:03:36 - fix(layout): adjust header pill badge alignment [2026-07-28T11:03:36]
 Commit at 2026-07-28T21:21:09 - feat(reports): separate web preview dashboard from printable PDF [2026-07-28T21:21:09]
+Commit at 2026-07-29T18:14:57 - feat(engine): optimize relational graph entity query performance [2026-07-29T18:14:57]
