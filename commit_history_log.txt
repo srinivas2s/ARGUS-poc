@@ -237,3 +237,4 @@ Commit at 2026-07-29T09:03:19 - fix(sidebar): resolve scrollbar overflow isolati
 Commit at 2026-07-29T11:26:44 - feat(reports): separate web preview dashboard from printable PDF [2026-07-29T11:26:44]
 Commit at 2026-07-30T15:34:49 - refactor(store): add multi-case file switching registry [2026-07-30T15:34:49]
 Commit at 2026-07-30T16:27:43 - feat(auth): implement security clearance access check [2026-07-30T16:27:43]
+Commit at 2026-07-30T10:08:36 - docs(readme): expand module architecture breakdown [2026-07-30T10:08:36]
