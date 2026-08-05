@@ -1,12 +1,10 @@
 # ARGUS — Agentic Relational Graph for Unified Safeguarding
 
-> **Entry for Kerala Police Hac'KP 2026 Challenge**  
 > *An Autonomous AI-Powered Investigative Intelligence Platform for Child Protection Investigators*
 
 ---
 
 ![ARGUS System Interface](https://img.shields.io/badge/CLASSIFICATION-TOP%20SECRET%20%2F%20AIR--GAPPED-000000?style=for-the-badge&logo=shield&logoColor=white)
-![Kerala Police Entry](https://img.shields.io/badge/EVENT-KERALA%20POLICE%20HAC'KP%202026-111111?style=for-the-badge)
 ![AI Intelligence](https://img.shields.io/badge/ENGINE-AUTONOMOUS%20MULTI--AGENT-222222?style=for-the-badge)
 
 ### Technology Stack & AI Engine Badges
@@ -25,7 +23,7 @@
 
 ## Executive Summary
 
-**ARGUS** (*Agentic Relational Graph for Unified Safeguarding*) is an advanced, autonomous digital intelligence platform designed to empower child protection investigators in the **Kerala Police Cyber Crime Division**. 
+**ARGUS** (*Agentic Relational Graph for Unified Safeguarding*) is an advanced, autonomous digital intelligence platform designed to empower child protection investigators in digital crime divisions. 
 
 Unlike conventional AI chatbots, ARGUS **behaves as an active digital co-investigator**. It continuously observes incoming forensic telemetry, remembers cross-platform data entities, correlates non-obvious relationships, generates probabilistic hypotheses, logs step-by-step agentic operations, and produces court-ready intelligence briefs under human-in-the-loop governance.
 
@@ -66,7 +64,7 @@ Inspired by **Palantir Gotham**, **Interpol Intelligence Systems**, **Jarvis**, 
                                                                           ┌─────────▼───────────┐
                                                                           │  EXPLAINABLE AI &   │
                                                                           │  REPORT GENERATOR   │
-                                                                          │ • DySP Approval     │
+                                                                          │ • Supervisor Sign-off│
                                                                           │ • PDF Intel Brief   │
                                                                           └─────────────────────┘
 ```
@@ -76,7 +74,7 @@ Inspired by **Palantir Gotham**, **Interpol Intelligence Systems**, **Jarvis**, 
 ## Key Feature Modules
 
 ### 1. Animated Hero Landing Page (`/`)
-- Glowing radar sweep animation with title, subtitle, challenge badge, and direct call-to-action button to enter the **Tactical War Room**.
+- Glowing radar sweep animation with title, subtitle, security badge, and direct call-to-action button to enter the **Tactical War Room**.
 
 ### 2. Global Command Layout (`/layout`)
 - **Top Header**: Real-time IST & UTC clocks, active case switcher (`CASE-2026-KL-8942`), dynamic threat score pill (`89.4% HIGH THREAT`), active AI provider pill (`Gemini 3.6 Flash`).
@@ -100,12 +98,12 @@ Inspired by **Palantir Gotham**, **Interpol Intelligence Systems**, **Jarvis**, 
 ### 5. Categorized Clue Board (`/clues`)
 - Organized grid grouped across **8 Forensic Categories**:
   1. **Suspects**: Dark web handles, NLP stylometry fingerprints.
-  2. **Locations**: Kaloor BSSID cell tower triangulation, Kerala district overlays.
+  2. **Locations**: BSSID cell tower triangulation, regional district overlays.
   3. **Aliases**: Handles across Telegram, Instagram, Matrix, and Discord.
   4. **Accounts**: ProtonMail relays, darknet group channels (`ShieldVault`).
-  5. **Conversations**: Malayalam-English chat transcripts with grooming keyword flags.
+  5. **Conversations**: Multilingual chat transcripts with grooming keyword flags.
   6. **Metadata**: LSB steganography ciphers embedded in image files.
-  7. **Devices**: Apple iPhone 14 Pro hardware serials, eSIM profiles in Thrissur.
+  7. **Devices**: Apple iPhone 14 Pro hardware serials, eSIM profiles in regional divisions.
   8. **Patterns**: Nighttime activity spikes (22:00 IST - 01:30 IST).
 
 ### 6. Dynamic Connection Map (`/connections`)
@@ -118,36 +116,36 @@ Inspired by **Palantir Gotham**, **Interpol Intelligence Systems**, **Jarvis**, 
 - Time-ordered digital footprint scrubber tracing events:
   - **10:25 PM**: Instagram account `@shadow_net_99` created.
   - **10:42 PM**: Flagged message detected.
-  - **11:08 PM**: Cell tower location identified in Kaloor, Kochi.
+  - **11:08 PM**: Cell tower location identified in central junction.
   - **11:21 PM**: Secondary Telegram admin handle discovered.
   - **11:35 PM**: Risk score escalated to 89.4% CRITICAL.
 
 ### 8. Living Investigation Notebook (`/notebook`) — *Core Highlight*
 - Continuous audit ledger tracking every autonomous sub-agent operation:
   - **08:10 PM**: Image entered into system (`EVID-9921.png`).
-  - **08:12 PM**: EXIF metadata extracted (Kochi GPS coordinates).
-  - **08:15 PM**: Facial biometric matching initiated against Interpol & SCRB registry.
+  - **08:12 PM**: EXIF metadata extracted (GPS coordinates).
+  - **08:15 PM**: Facial biometric matching initiated against Interpol & offender registries.
   - **08:17 PM**: Additional account identified (`@dark_harbor`).
   - **08:20 PM**: Timeline updated with 5 new timestamps.
   - **08:24 PM**: Risk score recalculated (89.4%).
-  - **08:30 PM**: DySP officer review requested.
+  - **08:30 PM**: Senior supervisor review requested.
 - Allows manual officer note injection and JSON audit ledger export.
 
 ### 9. AI Hypothesis Engine (`/hypotheses`)
 - Probabilistic hypothesis cards with confidence ratings and reasoning chains:
   - **Hypothesis A** (Confidence: **91%**): *Suspect A (@shadow_net_99) and Suspect B (@dark_harbor) are the same individual.*
-  - **Hypothesis B** (Confidence: **82%**): *Victim location shifted from Thiruvananthapuram to Kozhikode via Kochi transit corridor.*
+  - **Hypothesis B** (Confidence: **82%**): *Victim location shifted between two timestamps via transit corridor.*
   - **Hypothesis C** (Confidence: **88%**): *Coordinated network of 5 bot accounts distributing encrypted media links.*
 - Includes investigator **Validate** and **Reject** controls.
 
 ### 10. Official Case Report Generator (`/reports`)
-- Generates a full printable intelligence brief with Executive Summary, Timeline, Connections, Evidence, Clues, Hypotheses, Risk Assessment, and Tactical Interception Directives for Kerala Police.
+- Generates a full printable intelligence brief with Executive Summary, Timeline, Connections, Evidence, Clues, Hypotheses, Risk Assessment, and Tactical Interception Directives.
 
 ### 11. Autonomous Watchtower Mode (`/watchtower`)
 - Real-time simulation stream firing automated event pings, relationship discovery updates, and live threat scoring with play/pause controls.
 
 ### 12. Explainable AI (XAI) & Auditability (`/explainable-ai`)
-- Human-in-the-Loop governance dashboard showing step-by-step reasoning traces, input/output vectors, attributed evidence sources, and official DySP approval sign-offs.
+- Human-in-the-Loop governance dashboard showing step-by-step reasoning traces, input/output vectors, attributed evidence sources, and official supervisor approval sign-offs.
 
 ### 13. Model-Independent AI Orchestration Layer (`/settings`)
 - Abstracted model switcher supporting **7 AI Engine Providers**:
@@ -201,7 +199,6 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 
 ```
 argus-poc/
-├── PROJECT_TRACKER.md             # Session & agent handoff checklist
 ├── README.md                      # System documentation & guide
 ├── package.json
 ├── tsconfig.json
@@ -228,7 +225,7 @@ argus-poc/
     │   ├── layout/                # Header & Sidebar
     │   └── graph/                 # Interactive Canvas Graph
     ├── lib/                       # Data models & state engine
-    │   ├── mockData.ts            # Kerala Police child protection dataset
+    │   ├── mockData.ts            # Child protection investigation dataset
     │   ├── store.ts               # Reactive state manager
     │   └── ai-orchestrator.ts     # Multi-provider model abstraction
     ├── types/                     # TypeScript interfaces
@@ -251,12 +248,11 @@ argus-poc/
 ## Security & Air-Gapped Compliance
 
 - **Air-Gapped Deployment Ready**: ARGUS can run entirely offline using local LLMs (Ollama / vLLM) for high-security environments.
-- **Human-in-the-Loop Governance**: High-risk actions and risk score recalculations require explicit DySP officer sign-off.
+- **Human-in-the-Loop Governance**: High-risk actions and risk score recalculations require explicit supervisor sign-off.
 - **Immutable Operational Audit Trail**: Every sub-agent operation is logged sequentially in the Living Notebook.
 
 ---
 
 ## License & Credits
 
-Built for **Kerala Police Hac'KP 2026 Challenge**  
 Developed for Child Protection & Cyber Crime Investigation Divisions.
