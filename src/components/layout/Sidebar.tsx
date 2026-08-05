@@ -22,7 +22,7 @@ import {
 interface NavItem {
   name: string;
   href: string;
-  icon: React.ElementType;
+  icon: any;
   badge?: string;
   accent?: 'cyan' | 'pink' | 'purple';
 }
@@ -45,12 +45,12 @@ export const Sidebar: React.FC = () => {
   const pathname = usePathname();
 
   return (
-    <aside className="w-64 border-r border-slate-800/80 bg-black/95 backdrop-blur-md flex flex-col justify-between select-none h-[calc(100vh-4rem)] sticky top-16 z-40">
+    <aside className="w-64 border-r border-white/10 bg-black/80 backdrop-blur-xl flex flex-col justify-between select-none h-[calc(100vh-4rem)] sticky top-16 z-40 print:hidden">
       {/* Navigation List */}
       <div className="py-4 px-3 space-y-1 overflow-y-auto">
-        <div className="px-3 pb-2 text-[10px] font-mono uppercase tracking-widest text-slate-500 font-semibold flex items-center justify-between">
+        <div className="px-3 pb-2 text-[10px] font-mono uppercase tracking-widest text-white/40 font-semibold flex items-center justify-between">
           <span>INVESTIGATION MODULES</span>
-          <ShieldCheck className="w-3.5 h-3.5 text-cyan-400" />
+          <ShieldCheck className="w-3.5 h-3.5 text-white/50" />
         </div>
 
         {NAV_ITEMS.map((item) => {
@@ -61,35 +61,35 @@ export const Sidebar: React.FC = () => {
             <Link
               key={item.href}
               href={item.href}
-              className={`group flex items-center justify-between px-3 py-2.5 rounded-lg text-xs font-mono font-medium transition-all duration-200 ${
+              className={`group flex items-center justify-between px-3 py-2.5 rounded-xl text-xs font-mono font-medium transition-all duration-200 ${
                 isActive
-                  ? 'bg-slate-900 border border-cyan-500/50 text-cyan-300 shadow-cyber-cyan'
-                  : 'text-slate-400 hover:text-slate-200 hover:bg-slate-900/60 border border-transparent'
+                  ? 'bg-white/10 border border-white/20 text-white shadow-md shadow-white/5'
+                  : 'text-white/60 hover:text-white hover:bg-white/5 border border-transparent'
               }`}
             >
               <div className="flex items-center space-x-3">
                 <Icon className={`w-4 h-4 transition-colors ${
                   isActive 
-                    ? 'text-cyan-400' 
-                    : 'text-slate-500 group-hover:text-slate-300'
+                    ? 'text-white' 
+                    : 'text-white/40 group-hover:text-white/80'
                 }`} />
                 <span>{item.name}</span>
               </div>
 
               <div className="flex items-center space-x-1.5">
                 {item.badge && (
-                  <span className={`text-[9px] px-1.5 py-0.5 rounded font-mono uppercase font-bold ${
+                  <span className={`text-[9px] px-2 py-0.5 rounded-full font-mono uppercase font-semibold ${
                     item.accent === 'pink'
-                      ? 'bg-pink-500/20 text-pink-400 border border-pink-500/30'
+                      ? 'bg-pink-500/20 text-pink-300 border border-pink-500/30'
                       : item.accent === 'purple'
                       ? 'bg-purple-500/20 text-purple-300 border border-purple-500/30'
-                      : 'bg-cyan-500/15 text-cyan-400 border border-cyan-500/30'
+                      : 'bg-white/10 text-white/80 border border-white/20'
                   }`}>
                     {item.badge}
                   </span>
                 )}
                 <ChevronRight className={`w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity ${
-                  isActive ? 'opacity-100 text-cyan-400' : 'text-slate-600'
+                  isActive ? 'opacity-100 text-white' : 'text-white/30'
                 }`} />
               </div>
             </Link>
@@ -98,16 +98,16 @@ export const Sidebar: React.FC = () => {
       </div>
 
       {/* Footer Info Box */}
-      <div className="p-3 border-t border-slate-800/80 bg-slate-950/60">
-        <div className="glass-panel p-3 rounded-lg border-cyan-500/20 text-[11px] font-mono space-y-1.5">
-          <div className="flex items-center justify-between text-cyan-400 font-semibold">
-            <span>KERALA POLICE</span>
-            <span className="w-2 h-2 rounded-full bg-cyan-400 animate-ping" />
+      <div className="p-3 border-t border-white/10 bg-black/40">
+        <div className="glass-panel p-3.5 rounded-2xl border-white/10 text-[11px] font-mono space-y-1.5">
+          <div className="flex items-center justify-between text-white font-semibold">
+            <span>ARGUS INTEL CORE</span>
+            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
           </div>
-          <p className="text-slate-400 text-[10px] leading-relaxed">
-            Child Protection Division // Autonomous Intelligence Engine v3.4
+          <p className="text-white/50 text-[10px] leading-relaxed">
+            Child Safeguarding Division // Autonomous Engine v3.4
           </p>
-          <div className="pt-1 text-[9px] text-slate-500 border-t border-slate-800 flex justify-between">
+          <div className="pt-1.5 text-[9px] text-white/40 border-t border-white/10 flex justify-between">
             <span>AIR-GAPPED MODE</span>
             <span className="text-emerald-400">ONLINE</span>
           </div>
