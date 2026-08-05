@@ -63,9 +63,9 @@ export default function NotebookPage() {
         <div>
           <div className="flex items-center space-x-2 text-purple-400 font-mono text-xs font-semibold">
             <BookOpenCheck className="w-4 h-4 text-purple-400 animate-pulse" />
-            <span>KERALA POLICE AGENTIC AUDIT LEDGER</span>
+            <span>ARGUS AGENTIC AUDIT LEDGER</span>
           </div>
-          <h1 className="text-2xl font-extrabold text-white font-mono mt-0.5">
+          <h1 className="text-2xl font-extrabold text-white font-mono mt-0.5 text-white-glow">
             Living Investigation Notebook
           </h1>
           <p className="text-xs text-slate-400 font-mono">
