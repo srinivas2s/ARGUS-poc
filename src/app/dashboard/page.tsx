@@ -63,9 +63,9 @@ export default function DashboardPage() {
         <div>
           <div className="flex items-center space-x-2 text-cyan-400 font-mono text-xs font-semibold">
             <ShieldAlert className="w-4 h-4 animate-pulse" />
-            <span>KERALA POLICE CYBER CRIME DIVISION COMMAND CENTER</span>
+            <span>CYBER INTELLIGENCE COMMAND CENTER</span>
           </div>
-          <h1 className="text-2xl md:text-3xl font-extrabold text-white font-mono mt-1">
+          <h1 className="text-2xl md:text-3xl font-extrabold text-white font-mono mt-1 text-white-glow">
             Investigative Intelligence Dashboard
           </h1>
           <p className="text-xs text-slate-400 font-mono mt-0.5">
@@ -76,9 +76,9 @@ export default function DashboardPage() {
         <div className="flex items-center space-x-3 font-mono">
           <Link
             href="/war-room"
-            className="flex items-center space-x-2 bg-cyan-500 hover:bg-cyan-400 text-black px-4 py-2.5 rounded-lg text-xs font-bold transition-all shadow-cyber-cyan"
+            className="btn-cyan-gradient flex items-center space-x-2 px-4 py-2.5 rounded-xl text-xs font-bold"
           >
-            <Crosshair className="w-4 h-4" />
+            <Crosshair className="w-4 h-4 text-black" />
             <span>OPEN TACTICAL WAR ROOM</span>
           </Link>
         </div>
