@@ -53,9 +53,9 @@ export default function ConnectionsPage() {
         <div>
           <div className="flex items-center space-x-2 text-cyan-400 font-mono text-xs font-semibold">
             <Network className="w-4 h-4 text-cyan-400" />
-            <span>KERALA POLICE RELATIONAL GRAPH ENGINE</span>
+            <span>ARGUS RELATIONAL GRAPH ENGINE</span>
           </div>
-          <h1 className="text-2xl font-extrabold text-white font-mono mt-0.5">
+          <h1 className="text-2xl font-extrabold text-white font-mono mt-0.5 text-white-glow">
             Dynamic Multi-Entity Connection Map
           </h1>
           <p className="text-xs text-slate-400 font-mono">
