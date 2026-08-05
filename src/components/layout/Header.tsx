@@ -8,11 +8,11 @@ import {
   Layers, 
   Download, 
   Radio,
-  ChevronDown,
-  Check,
+  ChevronRight,
+  CheckCircle2,
   User,
-  LogOut,
-  LogIn
+  ArrowRight,
+  ChevronLeft
 } from 'lucide-react';
 import { argusStore, AVAILABLE_CASES, AuthUser } from '@/lib/store';
 import Link from 'next/link';
@@ -26,7 +26,7 @@ export const Header: React.FC = () => {
   const [user, setUser] = useState<AuthUser | null>(argusStore.user);
   
   const [isCaseDropdownOpen, setIsCaseDropdownOpen] = useState<boolean>(false);
-  const dropdownRef = useRef<HTMLDivElement>(null);
+  const dropdownRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const updateTimes = () => {
@@ -64,6 +64,14 @@ export const Header: React.FC = () => {
     <header className="h-16 border-b border-white/10 bg-black/80 backdrop-blur-xl sticky top-0 z-50 flex items-center justify-between px-6 select-none print:hidden gap-4 overflow-visible">
       {/* Left Branding & Interactive Case Selector */}
       <div className="flex items-center space-x-3 shrink-0 whitespace-nowrap">
+        <button
+          onClick={() => argusStore.toggleSidebar()}
+          title="Toggle Navigation Sidebar"
+          className="p-1.5 rounded-lg border border-white/10 hover:bg-white/10 text-white/70 hover:text-white transition-colors shrink-0 cursor-pointer"
+        >
+          <ChevronLeft className="w-4 h-4 text-sky-400" />
+        </button>
+
         <Link href="/" className="flex items-center space-x-2.5 group shrink-0">
           <div className="w-8 h-8 rounded-full border border-white/20 bg-white/5 flex items-center justify-center group-hover:scale-105 transition-transform shrink-0">
             <ShieldAlert className="w-4 h-4 text-white" />
@@ -92,7 +100,7 @@ export const Header: React.FC = () => {
             <span className="text-white font-semibold whitespace-nowrap">{caseId}</span>
             <span className="text-white/30">|</span>
             <span className="text-white/60 whitespace-nowrap max-w-[150px] truncate">{caseName}</span>
-            <ChevronDown className={`w-3.5 h-3.5 text-white/50 transition-transform ${isCaseDropdownOpen ? 'rotate-180' : ''}`} />
+            <ChevronRight className={`w-3.5 h-3.5 text-white/50 transition-transform ${isCaseDropdownOpen ? 'rotate-90' : ''}`} />
           </button>
 
           {/* Dropdown Menu */}
@@ -119,7 +127,7 @@ export const Header: React.FC = () => {
                     <div className="space-y-0.5">
                       <div className="font-bold flex items-center space-x-1.5">
                         <span className={isSelected ? 'text-sky-400' : 'text-white'}>{c.id}</span>
-                        {isSelected && <Check className="w-3.5 h-3.5 text-sky-400" />}
+                        {isSelected && <CheckCircle2 className="w-3.5 h-3.5 text-sky-400" />}
                       </div>
                       <div className="text-[10px] text-slate-400 font-sans">{c.name}</div>
                     </div>
@@ -157,9 +165,9 @@ export const Header: React.FC = () => {
             <button 
               onClick={() => argusStore.logout()} 
               title="Sign Out"
-              className="text-emerald-400/60 hover:text-emerald-200 transition-colors ml-1"
+              className="text-emerald-400/60 hover:text-emerald-200 transition-colors ml-1 cursor-pointer text-[10px] font-bold"
             >
-              <LogOut className="w-3 h-3" />
+              [LOGOUT]
             </button>
           </div>
         ) : (
@@ -167,7 +175,7 @@ export const Header: React.FC = () => {
             href="/login"
             className="inline-flex items-center space-x-1.5 border border-white/20 hover:bg-white/10 text-white px-3 py-1.5 rounded-full text-xs font-mono transition-all whitespace-nowrap shrink-0"
           >
-            <LogIn className="w-3.5 h-3.5 text-sky-400" />
+            <User className="w-3.5 h-3.5 text-sky-400" />
             <span>LOG IN</span>
           </Link>
         )}
@@ -195,7 +203,7 @@ export const Header: React.FC = () => {
                 entityId: 'node-suspect-a'
               });
             }}
-            className="inline-flex items-center space-x-1.5 border border-white/20 hover:bg-white/10 text-white px-3.5 py-1.5 rounded-full text-xs font-mono transition-all whitespace-nowrap shrink-0"
+            className="inline-flex items-center space-x-1.5 border border-white/20 hover:bg-white/10 text-white px-3.5 py-1.5 rounded-full text-xs font-mono transition-all whitespace-nowrap shrink-0 cursor-pointer"
           >
             <Radio className="w-3.5 h-3.5 text-sky-400 animate-spin shrink-0" />
             <span className="hidden sm:inline whitespace-nowrap">AUTONOMOUS SCAN</span>

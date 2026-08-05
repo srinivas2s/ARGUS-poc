@@ -53,6 +53,7 @@ class ArgusStore {
   public caseName: string = 'Operation ShieldWatch';
   public overallRiskScore: number = 89.4;
   public user: AuthUser | null = null;
+  public isSidebarCollapsed: boolean = false;
 
   public nodes: GraphNode[] = [...INITIAL_NODES];
   public edges: GraphEdge[] = [...INITIAL_EDGES];
@@ -89,6 +90,11 @@ class ArgusStore {
 
   private notify() {
     this.listeners.forEach((l) => l());
+  }
+
+  public toggleSidebar() {
+    this.isSidebarCollapsed = !this.isSidebarCollapsed;
+    this.notify();
   }
 
   public setCase(caseId: string) {
