@@ -54,13 +54,13 @@ export default function WarRoomPage() {
         <div>
           <div className="flex items-center space-x-2 text-cyan-400 font-mono text-xs font-semibold">
             <Crosshair className="w-4 h-4 text-cyan-400 animate-spin" />
-            <span>KERALA POLICE WAR ROOM // OPERATION SHIELDWATCH</span>
+            <span>ARGUS TACTICAL WAR ROOM // OPERATION SHIELDWATCH</span>
           </div>
-          <h1 className="text-2xl font-extrabold text-white font-mono mt-0.5">
+          <h1 className="text-2xl font-extrabold text-white font-mono mt-0.5 text-white-glow">
             Tactical Intelligence & Entity Canvas
           </h1>
           <p className="text-xs text-slate-400 font-mono">
-            Autonomous multi-modal correlation active • DySP Ernakulam Supervisor Stream
+            Autonomous multi-modal correlation active • Senior Supervisor Stream
           </p>
         </div>
 
