@@ -26,7 +26,7 @@ interface InteractiveGraphProps {
   onSelectNode: (id: string) => void;
 }
 
-const ENTITY_ICONS: Record<EntityType, React.ElementType> = {
+const ENTITY_ICONS: Record<EntityType, any> = {
   Person: User,
   Victim: ShieldAlert,
   Device: Smartphone,
