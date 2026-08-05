@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { ShieldAlert, KeyRound, User, ArrowRight, Lock, Sparkles } from 'lucide-react';
+import { ShieldAlert, Key, User, ArrowRight, Lock, Sparkles } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { argusStore } from '@/lib/store';
 
@@ -27,7 +27,7 @@ export default function LoginPage() {
     setTimeout(() => {
       const success = argusStore.login(name || 'Lead Investigator', code);
       if (success) {
-        router.push('/dashboard');
+        router.push('/select-case');
       } else {
         setError('Invalid Security Passcode.');
         setIsLoading(false);
@@ -80,14 +80,13 @@ export default function LoginPage() {
           <div className="space-y-1.5">
             <div className="flex justify-between items-center">
               <label className="text-slate-300 font-semibold flex items-center space-x-1.5">
-                <KeyRound className="w-3.5 h-3.5 text-sky-400" />
+                <Key className="w-3.5 h-3.5 text-sky-400" />
                 <span>ACCESS PASSCODE</span>
               </label>
-              <span className="text-[10px] text-sky-400 font-mono">Code: 12</span>
             </div>
             <input 
               type="password"
-              placeholder="Enter passcode (12)"
+              placeholder="Enter access passcode"
               value={code}
               onChange={(e) => setCode(e.target.value)}
               className="w-full bg-white/5 border border-white/10 focus:border-sky-400 rounded-xl px-4 py-3 text-white text-sm outline-none transition-colors tracking-widest"
