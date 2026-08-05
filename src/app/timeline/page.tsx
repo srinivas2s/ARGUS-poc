@@ -31,9 +31,9 @@ export default function TimelinePage() {
         <div>
           <div className="flex items-center space-x-2 text-cyan-400 font-mono text-xs font-semibold">
             <Clock className="w-4 h-4 text-cyan-400" />
-            <span>KERALA POLICE FORENSIC ENGINE</span>
+            <span>ARGUS FORENSIC TIMELINE ENGINE</span>
           </div>
-          <h1 className="text-2xl font-extrabold text-white font-mono mt-0.5">
+          <h1 className="text-2xl font-extrabold text-white font-mono mt-0.5 text-white-glow">
             Timeline Reconstruction Engine
           </h1>
           <p className="text-xs text-slate-400 font-mono">
