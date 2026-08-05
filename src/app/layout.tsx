@@ -1,8 +1,7 @@
 import type { Metadata } from 'next';
 import { Outfit, Plus_Jakarta_Sans, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
-import { Header } from '@/components/layout/Header';
-import { Sidebar } from '@/components/layout/Sidebar';
+import { AuthGuard } from '@/components/layout/AuthGuard';
 
 const outfit = Outfit({ 
   subsets: ['latin'],
@@ -34,14 +33,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`dark ${outfit.variable} ${plusJakarta.variable} ${jetbrainsMono.variable}`}>
-      <body className="bg-black text-slate-100 min-h-screen flex flex-col font-sans antialiased cyber-grid-bg print:bg-white print:text-black">
-        <Header />
-        <div className="flex flex-1 relative overflow-hidden print:overflow-visible">
-          <Sidebar />
-          <main className="flex-1 overflow-y-auto p-4 md:p-6 space-y-6 relative z-10 print:p-0 print:overflow-visible">
-            {children}
-          </main>
-        </div>
+      <body className="bg-black text-slate-100 min-h-screen flex flex-col font-sans antialiased">
+        <AuthGuard>
+          {children}
+        </AuthGuard>
       </body>
     </html>
   );
