@@ -7,10 +7,8 @@ import {
   Cpu, 
   Clock, 
   Layers, 
-  Zap, 
   Download, 
-  Radio, 
-  Sliders
+  Radio
 } from 'lucide-react';
 import { argusStore } from '@/lib/store';
 import Link from 'next/link';
@@ -45,97 +43,83 @@ export const Header: React.FC = () => {
   }, []);
 
   return (
-    <header className="h-16 border-b border-slate-800/80 bg-black/90 backdrop-blur-md sticky top-0 z-50 flex items-center justify-between px-4 select-none">
+    <header className="h-16 border-b border-white/10 bg-black/80 backdrop-blur-xl sticky top-0 z-50 flex items-center justify-between px-6 select-none print:hidden gap-4 overflow-x-auto no-scrollbar">
       {/* Left Branding & Case Selector */}
-      <div className="flex items-center space-x-4">
-        <Link href="/" className="flex items-center space-x-3 group">
-          <div className="w-10 h-10 rounded-lg border border-cyan-500/50 bg-cyan-950/30 flex items-center justify-center shadow-cyber-cyan group-hover:scale-105 transition-transform">
-            <ShieldAlert className="w-6 h-6 text-cyan-400 animate-pulse" />
+      <div className="flex items-center space-x-3 shrink-0 whitespace-nowrap">
+        <Link href="/" className="flex items-center space-x-2.5 group shrink-0">
+          <div className="w-8 h-8 rounded-full border border-white/20 bg-white/5 flex items-center justify-center group-hover:scale-105 transition-transform shrink-0">
+            <ShieldAlert className="w-4 h-4 text-white" />
           </div>
-          <div>
-            <div className="flex items-center space-x-2">
-              <span className="font-extrabold text-lg tracking-wider text-white group-hover:text-cyan-400 transition-colors">
-                ARGUS
-              </span>
-              <span className="text-[10px] uppercase tracking-widest px-1.5 py-0.5 rounded bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 font-mono">
-                Hac'KP 2026
-              </span>
-            </div>
-            <p className="text-[10px] font-mono text-slate-400 tracking-tight hidden sm:block">
-              Agentic Relational Graph for Unified Safeguarding
-            </p>
+          <div className="flex items-center space-x-2 shrink-0">
+            <span className="font-bold text-base tracking-tight text-white group-hover:text-white/80 transition-colors whitespace-nowrap">
+              ARGUS.
+            </span>
+            <span className="text-[10px] uppercase tracking-wider px-2 py-0.5 rounded-full bg-white/10 border border-white/15 text-white/80 font-mono whitespace-nowrap shrink-0">
+              CYBER COMMAND
+            </span>
           </div>
         </Link>
 
         {/* Vertical Divider */}
-        <div className="h-8 w-px bg-slate-800 hidden md:block" />
+        <div className="h-5 w-px bg-white/10 hidden md:block shrink-0" />
 
         {/* Active Case Badge */}
-        <div className="hidden lg:flex items-center space-x-2 bg-slate-900/80 border border-slate-800 px-3 py-1.5 rounded-md text-xs font-mono">
-          <Layers className="w-3.5 h-3.5 text-cyan-400" />
-          <span className="text-slate-400">ACTIVE:</span>
-          <span className="text-cyan-300 font-semibold">{caseId}</span>
-          <span className="text-slate-500">|</span>
-          <span className="text-slate-300 truncate max-w-[200px]">Operation ShieldWatch</span>
+        <div className="hidden lg:inline-flex items-center space-x-2 bg-white/5 border border-white/10 px-3 py-1 rounded-full text-xs font-mono text-white/70 whitespace-nowrap shrink-0">
+          <Layers className="w-3.5 h-3.5 text-sky-400 shrink-0" />
+          <span>CASE:</span>
+          <span className="text-white font-semibold whitespace-nowrap">{caseId}</span>
+          <span className="text-white/30">|</span>
+          <span className="text-white/60 whitespace-nowrap">Operation ShieldWatch</span>
         </div>
       </div>
 
-      {/* Center Status Indicators */}
-      <div className="hidden md:flex items-center space-x-6">
-        {/* Threat Score Gauge */}
-        <div className="flex items-center space-x-2 bg-pink-950/20 border border-pink-500/40 px-3 py-1.5 rounded-md shadow-cyber-pink">
-          <Activity className="w-4 h-4 text-pink-500 animate-pulse" />
-          <span className="text-xs font-mono text-slate-400">THREAT LEVEL:</span>
-          <span className="text-sm font-mono font-bold text-pink-500 text-pink-glow">
-            {riskScore}% HIGH
-          </span>
-        </div>
-
+      {/* Center Telemetry Status Indicators */}
+      <div className="hidden md:flex items-center space-x-3 shrink-0 whitespace-nowrap">
         {/* AI Provider Indicator */}
-        <Link href="/settings" className="flex items-center space-x-2 bg-slate-900/80 border border-slate-800 hover:border-purple-500/50 px-3 py-1.5 rounded-md text-xs font-mono transition-colors">
-          <Cpu className="w-3.5 h-3.5 text-purple-400" />
-          <span className="text-slate-400">MODEL:</span>
-          <span className="text-purple-300 truncate max-w-[140px]">{activeModel}</span>
+        <Link href="/settings" className="inline-flex items-center space-x-2 bg-white/5 border border-white/10 hover:border-white/25 px-3.5 py-1 rounded-full text-xs font-mono transition-colors whitespace-nowrap shrink-0">
+          <Cpu className="w-3.5 h-3.5 text-indigo-400 shrink-0" />
+          <span className="text-white/60">ENGINE:</span>
+          <span className="text-white font-medium whitespace-nowrap max-w-[160px] truncate">{activeModel}</span>
         </Link>
       </div>
 
       {/* Right Time & Actions */}
-      <div className="flex items-center space-x-4 font-mono text-xs">
+      <div className="flex items-center space-x-3 font-mono text-xs shrink-0 whitespace-nowrap">
         {/* Live Clock */}
-        <div className="hidden xl:flex flex-col items-end text-slate-400 border-r border-slate-800 pr-4">
-          <div className="flex items-center space-x-1.5 text-cyan-400 font-semibold">
-            <Clock className="w-3.5 h-3.5" />
+        <div className="hidden xl:flex flex-col items-end text-white/50 border-r border-white/10 pr-3 shrink-0 whitespace-nowrap">
+          <div className="flex items-center space-x-1.5 text-white font-semibold whitespace-nowrap">
+            <Clock className="w-3.5 h-3.5 text-sky-400 shrink-0" />
             <span>{timeIST} IST</span>
           </div>
-          <span className="text-[10px] text-slate-500">{timeUTC}</span>
+          <span className="text-[10px] text-white/40 whitespace-nowrap">{timeUTC}</span>
         </div>
 
         {/* Quick Action Buttons */}
-        <div className="flex items-center space-x-2">
+        <div className="flex items-center space-x-2 shrink-0 whitespace-nowrap">
           <button 
             onClick={() => {
               argusStore.addWatchtowerEvent({
                 id: `wt-${Date.now()}`,
                 timestamp: new Date().toLocaleTimeString('en-US', { hour12: false }) + ' IST',
                 type: 'THREAT_SPIKE',
-                source: 'Kerala Police AI Agent',
-                message: 'Manual scan triggered: 2 new cross-platform accounts correlated in Kozhikode.',
+                source: 'Autonomous AI Agent',
+                message: 'Manual scan triggered: 2 new cross-platform accounts correlated.',
                 riskScore: 91.2,
                 entityId: 'node-suspect-a'
               });
             }}
-            className="flex items-center space-x-1.5 bg-cyan-500/10 hover:bg-cyan-500/20 border border-cyan-500/40 text-cyan-300 px-2.5 py-1.5 rounded-md text-xs font-mono transition-all hover:shadow-cyber-cyan"
+            className="inline-flex items-center space-x-1.5 border border-white/20 hover:bg-white/10 text-white px-3.5 py-1.5 rounded-full text-xs font-mono transition-all whitespace-nowrap shrink-0"
           >
-            <Radio className="w-3.5 h-3.5 text-cyan-400 animate-spin" />
-            <span className="hidden sm:inline">AUTONOMOUS SCAN</span>
+            <Radio className="w-3.5 h-3.5 text-sky-400 animate-spin shrink-0" />
+            <span className="hidden sm:inline whitespace-nowrap">AUTONOMOUS SCAN</span>
           </button>
 
           <Link
             href="/reports"
-            className="flex items-center space-x-1.5 bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 px-2.5 py-1.5 rounded-md text-xs font-mono transition-colors"
+            className="inline-flex items-center space-x-1.5 bg-white text-black hover:bg-white/90 px-3.5 py-1.5 rounded-full text-xs font-semibold transition-transform hover:scale-105 whitespace-nowrap shrink-0"
           >
-            <Download className="w-3.5 h-3.5 text-slate-400" />
-            <span className="hidden lg:inline">INTEL BRIEF</span>
+            <Download className="w-3.5 h-3.5 text-black shrink-0" />
+            <span className="hidden lg:inline whitespace-nowrap">INTEL BRIEF</span>
           </Link>
         </div>
       </div>
