@@ -39,6 +39,7 @@ const NAV_ITEMS: NavItem[] = [
   { name: 'Watchtower Mode', href: '/watchtower', icon: Radio, badge: 'LIVE', accent: 'pink' },
   { name: 'Explainable AI', href: '/explainable-ai', icon: BrainCircuit },
   { name: 'AI Orchestration', href: '/settings', icon: Settings },
+  { name: 'Auth / Security', href: '/login', icon: ShieldCheck, badge: 'AUTH' },
 ];
 
 export const Sidebar: React.FC = () => {
