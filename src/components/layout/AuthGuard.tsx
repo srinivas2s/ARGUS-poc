@@ -34,7 +34,7 @@ export const AuthGuard: React.FC<{ children: React.ReactNode }> = ({ children })
   }, [isLoaded, user, pathname, router]);
 
   // Full-screen standalone pages without standard header/sidebar navigation
-  if (pathname === '/login' || pathname === '/select-case') {
+  if (pathname === '/' || pathname === '/login' || pathname === '/select-case') {
     return <>{children}</>;
   }
 
@@ -48,11 +48,11 @@ export const AuthGuard: React.FC<{ children: React.ReactNode }> = ({ children })
   }
 
   return (
-    <div className="min-h-screen flex flex-col font-sans antialiased cyber-grid-bg print:bg-white print:text-black">
+    <div className="h-screen flex flex-col font-sans antialiased cyber-grid-bg overflow-hidden print:bg-white print:text-black print:h-auto print:overflow-visible">
       <Header />
-      <div className="flex flex-1 relative overflow-hidden print:overflow-visible">
+      <div className="flex flex-1 relative overflow-hidden h-[calc(100vh-4rem)] print:overflow-visible print:h-auto">
         <Sidebar />
-        <main className="flex-1 overflow-y-auto p-4 md:p-6 space-y-6 relative z-10 print:p-0 print:overflow-visible">
+        <main className="flex-1 overflow-y-auto p-4 md:p-6 space-y-6 relative z-10 overscroll-contain print:p-0 print:overflow-visible">
           {children}
         </main>
       </div>
