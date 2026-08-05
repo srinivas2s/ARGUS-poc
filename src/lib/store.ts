@@ -8,8 +8,7 @@ import {
   EvidenceItem, 
   XAIReasoningStep,
   WatchtowerEvent,
-  OrchestrationSettings,
-  AIProvider
+  OrchestrationSettings
 } from '../types';
 import { 
   INITIAL_NODES, 
@@ -24,15 +23,36 @@ import {
   DEFAULT_ORCHESTRATION_SETTINGS 
 } from './mockData';
 
-// Lightweight event emitter & state store for Next.js client components
+export interface CaseFile {
+  id: string;
+  name: string;
+  threatScore: number;
+  status: 'ACTIVE' | 'PENDING' | 'CLOSED';
+}
+
+export const AVAILABLE_CASES: CaseFile[] = [
+  { id: 'CASE-2026-KL-8942', name: 'Operation ShieldWatch', threatScore: 89.4, status: 'ACTIVE' },
+  { id: 'CASE-2026-KL-4012', name: 'Operation DarkNet Stealth', threatScore: 76.2, status: 'ACTIVE' },
+  { id: 'CASE-2026-KL-9910', name: 'Operation CyberVault', threatScore: 92.1, status: 'ACTIVE' },
+  { id: 'CASE-2026-KL-1055', name: 'Operation PhantomSignal', threatScore: 64.5, status: 'CLOSED' },
+];
+
+export interface AuthUser {
+  name: string;
+  code: string;
+  role: string;
+  loginTime: string;
+}
+
 type Listener = () => void;
 
 class ArgusStore {
   private listeners: Set<Listener> = new Set();
 
   public caseId: string = 'CASE-2026-KL-8942';
-  public caseName: string = 'Operation ShieldWatch (Child Protection Division)';
+  public caseName: string = 'Operation ShieldWatch';
   public overallRiskScore: number = 89.4;
+  public user: AuthUser | null = null;
 
   public nodes: GraphNode[] = [...INITIAL_NODES];
   public edges: GraphEdge[] = [...INITIAL_EDGES];
@@ -48,7 +68,19 @@ class ArgusStore {
   public selectedNodeId: string | null = 'node-suspect-a';
   public selectedClueId: string | null = 'clue-1';
   public isWatchtowerActive: boolean = true;
-  public filterCategory: string = 'ALL';
+
+  constructor() {
+    if (typeof window !== 'undefined') {
+      const storedUser = localStorage.getItem('argus_user');
+      if (storedUser) {
+        try {
+          this.user = JSON.parse(storedUser);
+        } catch (e) {
+          this.user = null;
+        }
+      }
+    }
+  }
 
   public subscribe(listener: Listener): () => void {
     this.listeners.add(listener);
@@ -57,6 +89,41 @@ class ArgusStore {
 
   private notify() {
     this.listeners.forEach((l) => l());
+  }
+
+  public setCase(caseId: string) {
+    const foundCase = AVAILABLE_CASES.find(c => c.id === caseId);
+    if (foundCase) {
+      this.caseId = foundCase.id;
+      this.caseName = foundCase.name;
+      this.overallRiskScore = foundCase.threatScore;
+      this.notify();
+    }
+  }
+
+  public login(name: string, code: string): boolean {
+    if (code.trim() === '12') {
+      this.user = {
+        name: name.trim() || 'Lead Investigator',
+        code: '12',
+        role: 'Senior Cyber Investigator',
+        loginTime: new Date().toLocaleTimeString('en-US', { hour12: false }) + ' IST'
+      };
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('argus_user', JSON.stringify(this.user));
+      }
+      this.notify();
+      return true;
+    }
+    return false;
+  }
+
+  public logout() {
+    this.user = null;
+    if (typeof window !== 'undefined') {
+      localStorage.removeItem('argus_user');
+    }
+    this.notify();
   }
 
   public setSelectedNode(id: string | null) {
@@ -74,13 +141,12 @@ class ArgusStore {
       h.id === id ? { ...h, status, lastUpdated: new Date().toLocaleTimeString('en-US') + ' IST' } : h
     );
     
-    // Add notebook entry for audit trace
     this.addNotebookEntry({
       id: `nb-${Date.now()}`,
       time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
       timestampISO: new Date().toISOString(),
       title: `Hypothesis ${id.toUpperCase()} updated.`,
-      description: `Investigator modified status of ${id} to ${status}.`,
+      description: `Investigator ${this.user?.name || 'Officer'} modified status of ${id} to ${status}.`,
       agentName: 'HumanInvestigator',
       operationType: 'OFFICER_REVIEW',
       status: 'COMPLETE',
