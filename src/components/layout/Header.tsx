@@ -11,8 +11,7 @@ import {
   ChevronRight,
   CheckCircle2,
   User,
-  ArrowRight,
-  ChevronLeft
+  ArrowRight
 } from 'lucide-react';
 import { argusStore, AVAILABLE_CASES, AuthUser } from '@/lib/store';
 import Link from 'next/link';
@@ -64,14 +63,6 @@ export const Header: React.FC = () => {
     <header className="h-16 border-b border-white/10 bg-black/80 backdrop-blur-xl sticky top-0 z-50 flex items-center justify-between px-6 select-none print:hidden gap-4 overflow-visible">
       {/* Left Branding & Interactive Case Selector */}
       <div className="flex items-center space-x-3 shrink-0 whitespace-nowrap">
-        <button
-          onClick={() => argusStore.toggleSidebar()}
-          title="Toggle Navigation Sidebar"
-          className="p-1.5 rounded-lg border border-white/10 hover:bg-white/10 text-white/70 hover:text-white transition-colors shrink-0 cursor-pointer"
-        >
-          <ChevronLeft className="w-4 h-4 text-sky-400" />
-        </button>
-
         <Link href="/" className="flex items-center space-x-2.5 group shrink-0">
           <div className="w-8 h-8 rounded-full border border-white/20 bg-white/5 flex items-center justify-center group-hover:scale-105 transition-transform shrink-0">
             <ShieldAlert className="w-4 h-4 text-white" />
@@ -79,9 +70,6 @@ export const Header: React.FC = () => {
           <div className="flex items-center space-x-2 shrink-0">
             <span className="font-bold text-base tracking-tight text-white group-hover:text-white/80 transition-colors whitespace-nowrap">
               ARGUS.
-            </span>
-            <span className="text-[10px] uppercase tracking-wider px-2 py-0.5 rounded-full bg-white/10 border border-white/15 text-white/80 font-mono whitespace-nowrap shrink-0">
-              CYBER COMMAND
             </span>
           </div>
         </Link>

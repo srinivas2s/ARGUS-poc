@@ -31,11 +31,11 @@ interface NavItem {
 const NAV_ITEMS: NavItem[] = [
   { name: 'Dashboard', href: '/dashboard', icon: LayoutDashboard },
   { name: 'War Room', href: '/war-room', icon: Crosshair, badge: 'MAIN', accent: 'cyan' },
-  { name: 'Clue Board', href: '/clues', icon: SearchCode, badge: '8 Clues' },
-  { name: 'Connection Map', href: '/connections', icon: Network, badge: '9 Nodes', accent: 'cyan' },
+  { name: 'Clue Board', href: '/clues', icon: SearchCode, badge: '8 CLUES' },
+  { name: 'Connection Map', href: '/connections', icon: Network, badge: '9 NODES', accent: 'cyan' },
   { name: 'Timeline', href: '/timeline', icon: Clock },
-  { name: 'Living Notebook', href: '/notebook', icon: BookOpenCheck, badge: 'Agentic Log', accent: 'purple' },
-  { name: 'Hypotheses', href: '/hypotheses', icon: Lightbulb, badge: '91% Conf', accent: 'pink' },
+  { name: 'Living Notebook', href: '/notebook', icon: BookOpenCheck, badge: 'LOG', accent: 'purple' },
+  { name: 'Hypotheses', href: '/hypotheses', icon: Lightbulb, badge: '91% CONF', accent: 'pink' },
   { name: 'Case Reports', href: '/reports', icon: FileSpreadsheet },
   { name: 'Watchtower Mode', href: '/watchtower', icon: Radio, badge: 'LIVE', accent: 'pink' },
   { name: 'Explainable AI', href: '/explainable-ai', icon: BrainCircuit },
@@ -110,12 +110,12 @@ export const Sidebar: React.FC = () => {
               {!isCollapsed && (
                 <div className="flex items-center space-x-1.5">
                   {item.badge && (
-                    <span className={`text-[9px] px-2 py-0.5 rounded-full font-mono uppercase font-semibold ${
+                    <span className={`h-5 inline-flex items-center justify-center px-2.5 rounded-full text-[9px] font-mono uppercase font-bold whitespace-nowrap shrink-0 border ${
                       item.accent === 'pink'
-                        ? 'bg-pink-500/20 text-pink-300 border border-pink-500/30'
+                        ? 'bg-pink-500/20 text-pink-300 border-pink-500/30'
                         : item.accent === 'purple'
-                        ? 'bg-purple-500/20 text-purple-300 border border-purple-500/30'
-                        : 'bg-white/10 text-white/80 border border-white/20'
+                        ? 'bg-purple-500/20 text-purple-300 border-purple-500/30'
+                        : 'bg-sky-500/20 text-sky-300 border-sky-500/30'
                     }`}>
                       {item.badge}
                     </span>
