@@ -16,7 +16,8 @@ import {
   BrainCircuit, 
   Settings,
   ChevronRight,
-  ShieldCheck
+  ShieldCheck,
+  Search
 } from 'lucide-react';
 import { argusStore } from '@/lib/store';
 
@@ -35,6 +36,7 @@ const NAV_ITEMS: NavItem[] = [
   { name: 'Connection Map', href: '/connections', icon: Network, badge: '9 NODES', accent: 'cyan' },
   { name: 'Timeline', href: '/timeline', icon: Clock },
   { name: 'Living Notebook', href: '/notebook', icon: BookOpenCheck, badge: 'LOG', accent: 'purple' },
+  { name: 'Reverse Engine', href: '/reverse-investigation', icon: Search, badge: 'GAP ANALYSIS', accent: 'cyan' },
   { name: 'Hypotheses', href: '/hypotheses', icon: Lightbulb, badge: '91% CONF', accent: 'pink' },
   { name: 'Case Reports', href: '/reports', icon: FileSpreadsheet },
   { name: 'Watchtower Mode', href: '/watchtower', icon: Radio, badge: 'LIVE', accent: 'pink' },
