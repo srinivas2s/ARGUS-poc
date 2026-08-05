@@ -45,9 +45,9 @@ export const Sidebar: React.FC = () => {
   const pathname = usePathname();
 
   return (
-    <aside className="w-64 border-r border-white/10 bg-black/80 backdrop-blur-xl flex flex-col justify-between select-none h-[calc(100vh-4rem)] sticky top-16 z-40 print:hidden">
-      {/* Navigation List */}
-      <div className="py-4 px-3 space-y-1 overflow-y-auto no-scrollbar">
+    <aside className="w-64 shrink-0 border-r border-white/10 bg-black/80 backdrop-blur-xl flex flex-col justify-between select-none h-full z-40 print:hidden overflow-hidden">
+      {/* Navigation List Container with Isolated Scroll */}
+      <div className="py-4 px-3 space-y-1 flex-1 overflow-y-auto no-scrollbar overscroll-contain">
         <div className="px-3 pb-2 text-[10px] font-mono uppercase tracking-widest text-white/40 font-semibold flex items-center justify-between">
           <span>INVESTIGATION MODULES</span>
           <ShieldCheck className="w-3.5 h-3.5 text-white/50" />
@@ -98,7 +98,7 @@ export const Sidebar: React.FC = () => {
       </div>
 
       {/* Footer Info Box */}
-      <div className="p-3 border-t border-white/10 bg-black/40">
+      <div className="p-3 border-t border-white/10 bg-black/40 shrink-0">
         <div className="glass-panel p-3.5 rounded-2xl border-white/10 text-[11px] font-mono space-y-1.5">
           <div className="flex items-center justify-between text-white font-semibold">
             <span>ARGUS INTEL CORE</span>
