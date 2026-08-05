@@ -4,21 +4,16 @@
 
 @layer base {
   :root {
-    --bg-main: #030712;
-    --card-bg: rgba(15, 23, 42, 0.75);
-    --card-hover: rgba(30, 41, 59, 0.85);
-    --border-color: rgba(56, 189, 248, 0.2);
-    --border-glow: rgba(0, 240, 255, 0.5);
-    --primary-cyan: #00F0FF;
-    --primary-purple: #A855F7;
-    --primary-crimson: #FF0055;
-    --text-main: #FFFFFF;
-    --text-muted: #94A3B8;
+    --bg-main: #000000;
+    --card-bg: rgba(15, 23, 42, 0.6);
+    --card-hover: rgba(30, 41, 59, 0.7);
+    --border-color: rgba(255, 255, 255, 0.08);
+    --border-hover: rgba(56, 189, 248, 0.3);
   }
 
   body {
-    background-color: #030712;
-    color: #FFFFFF;
+    background-color: #000000;
+    color: #F8FAFC;
     font-family: var(--font-jakarta), 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
     overflow-x: hidden;
   }
@@ -34,180 +29,164 @@
 
 /* Global Selection */
 ::selection {
-  background-color: #00F0FF;
+  background-color: #38BDF8;
   color: #000000;
 }
 
-/* Unique ARGUS Hexagonal & Cyber Grid Backdrop */
-.cyber-grid-bg {
-  background-color: #030712;
+/* Premium Pure Black Grid Overlay */
+.cyber-grid-bg, .cyber-dot-bg {
+  background-color: #000000;
   background-image: 
-    radial-gradient(ellipse at 50% 15%, rgba(0, 240, 255, 0.12) 0%, transparent 60%),
-    radial-gradient(circle at 85% 80%, rgba(168, 85, 247, 0.08) 0%, transparent 55%),
-    linear-gradient(to right, rgba(0, 240, 255, 0.04) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(0, 240, 255, 0.04) 1px, transparent 1px);
-  background-size: 100% 100%, 100% 100%, 40px 40px, 40px 40px;
+    radial-gradient(circle at 50% 20%, rgba(56, 189, 248, 0.08) 0%, transparent 65%),
+    radial-gradient(circle at 85% 80%, rgba(129, 140, 248, 0.06) 0%, transparent 55%),
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 36px 36px, 36px 36px;
   background-position: center center;
 }
 
-/* Unique ARGUS Glassmorphic Cyber Panels with Tactical Corner Glows */
+/* Ultra-Premium Professional Glass Panel */
 .glass-panel, .glass-card {
-  position: relative;
-  background: linear-gradient(135deg, rgba(15, 23, 42, 0.8) 0%, rgba(10, 15, 30, 0.9) 100%);
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.7) 0%, rgba(10, 15, 30, 0.8) 100%);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(0, 240, 255, 0.18);
-  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.8), inset 0 1px 0 0 rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.7), inset 0 1px 0 0 rgba(255, 255, 255, 0.06);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .glass-panel:hover, .glass-card:hover {
-  border-color: rgba(0, 240, 255, 0.45);
-  box-shadow: 0 12px 35px -10px rgba(0, 240, 255, 0.22), inset 0 1px 0 0 rgba(0, 240, 255, 0.15);
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.7) 0%, rgba(15, 23, 42, 0.85) 100%);
+  border-color: rgba(56, 189, 248, 0.35);
+  box-shadow: 0 15px 35px -10px rgba(56, 189, 248, 0.15), inset 0 1px 0 0 rgba(255, 255, 255, 0.12);
   transform: translateY(-2px);
 }
 
 .glass-panel-glow {
-  background: linear-gradient(135deg, rgba(0, 240, 255, 0.12) 0%, rgba(15, 23, 42, 0.85) 100%);
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.12) 0%, rgba(15, 23, 42, 0.8) 100%);
   backdrop-filter: blur(22px);
   -webkit-backdrop-filter: blur(22px);
-  border: 1px solid rgba(0, 240, 255, 0.5);
-  box-shadow: 0 0 30px rgba(0, 240, 255, 0.2), inset 0 0 15px rgba(0, 240, 255, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.18), inset 0 0 15px rgba(56, 189, 248, 0.08);
 }
 
 .glass-panel-pink {
-  background: linear-gradient(135deg, rgba(255, 0, 85, 0.12) 0%, rgba(15, 23, 42, 0.85) 100%);
+  background: linear-gradient(135deg, rgba(244, 63, 94, 0.12) 0%, rgba(15, 23, 42, 0.8) 100%);
   backdrop-filter: blur(22px);
   -webkit-backdrop-filter: blur(22px);
-  border: 1px solid rgba(255, 0, 85, 0.5);
-  box-shadow: 0 0 30px rgba(255, 0, 85, 0.22), inset 0 0 15px rgba(255, 0, 85, 0.1);
+  border: 1px solid rgba(244, 63, 94, 0.4);
+  box-shadow: 0 0 30px rgba(244, 63, 94, 0.18), inset 0 0 15px rgba(244, 63, 94, 0.08);
 }
 
-/* Tactical Corner Brackets for High-End Cyber aesthetic */
-.corner-brackets {
-  position: relative;
+/* Rich Gradient Typography */
+.text-gradient-white {
+  background: linear-gradient(135deg, #FFFFFF 0%, #CBD5E1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.corner-brackets::before,
-.corner-brackets::after {
-  content: '';
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  border-color: rgba(0, 240, 255, 0.6);
-  pointer-events: none;
+.text-gradient-sky {
+  background: linear-gradient(135deg, #38BDF8 0%, #818CF8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.corner-brackets::before {
-  top: 0;
-  left: 0;
-  border-top: 2px solid;
-  border-left: 2px solid;
+.text-gradient-rose {
+  background: linear-gradient(135deg, #F43F5E 0%, #FB7185 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.corner-brackets::after {
-  bottom: 0;
-  right: 0;
-  border-bottom: 2px solid;
-  border-right: 2px solid;
-}
-
-/* Rich Neon Typography */
 .text-cyan-glow {
-  color: #00F0FF;
-  text-shadow: 0 0 12px rgba(0, 240, 255, 0.6), 0 0 25px rgba(0, 240, 255, 0.3);
+  color: #38BDF8;
+  text-shadow: 0 0 12px rgba(56, 189, 248, 0.5);
 }
 
-.text-purple-glow {
-  color: #A855F7;
-  text-shadow: 0 0 12px rgba(168, 85, 247, 0.6);
+.text-pink-glow {
+  color: #F43F5E;
+  text-shadow: 0 0 12px rgba(244, 63, 94, 0.6);
 }
 
-.text-crimson-glow {
-  color: #FF0055;
-  text-shadow: 0 0 12px rgba(255, 0, 85, 0.7);
-}
-
-/* Unique Cybernetic Buttons */
-.btn-cyber-primary {
-  background: linear-gradient(135deg, #00F0FF 0%, #0077FF 100%);
-  color: #030712;
+/* Sleek Premium Pill Buttons */
+.btn-white-pill {
+  background: linear-gradient(135deg, #FFFFFF 0%, #F1F5F9 100%);
+  color: #090D16;
   font-weight: 700;
   border-radius: 9999px;
-  box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-cyber-primary:hover {
+.btn-white-pill:hover {
+  background: #FFFFFF;
   transform: translateY(-2px) scale(1.02);
-  box-shadow: 0 0 30px rgba(0, 240, 255, 0.65);
+  box-shadow: 0 8px 30px rgba(255, 255, 255, 0.35);
 }
 
-.btn-cyber-purple {
-  background: linear-gradient(135deg, #A855F7 0%, #6366F1 100%);
+.btn-sky-gradient {
+  background: linear-gradient(135deg, #0EA5E9 0%, #6366F1 100%);
   color: #FFFFFF;
   font-weight: 700;
   border-radius: 9999px;
-  box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+  box-shadow: 0 4px 20px rgba(14, 165, 233, 0.35);
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-cyber-purple:hover {
+.btn-sky-gradient:hover {
   transform: translateY(-2px) scale(1.02);
-  box-shadow: 0 0 30px rgba(168, 85, 247, 0.65);
+  box-shadow: 0 8px 30px rgba(14, 165, 233, 0.55);
 }
 
-.btn-cyber-outline {
-  background: rgba(15, 23, 42, 0.6);
-  border: 1px solid rgba(0, 240, 255, 0.3);
-  color: #00F0FF;
+.btn-outline-pill {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #F8FAFC;
   font-weight: 600;
   border-radius: 9999px;
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-cyber-outline:hover {
-  background: rgba(0, 240, 240, 0.15);
-  border-color: rgba(0, 240, 255, 0.6);
-  box-shadow: 0 0 20px rgba(0, 240, 255, 0.25);
+.btn-outline-pill:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(56, 189, 248, 0.4);
   transform: translateY(-1px);
 }
 
-/* Radar Sweep Beam */
+/* Radar Beam */
 .radar-beam {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 50%;
   height: 50%;
-  background: conic-gradient(from 0deg at 0% 0%, rgba(0, 240, 255, 0.4) 0deg, rgba(0, 240, 255, 0) 65deg);
+  background: conic-gradient(from 0deg at 0% 0%, rgba(56, 189, 248, 0.35) 0deg, rgba(56, 189, 248, 0) 65deg);
   transform-origin: 0% 0%;
   animation: radarSweep 5s linear infinite;
   pointer-events: none;
 }
 
-/* Custom Tactical Scrollbar */
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #030712;
-  border-left: 1px solid rgba(0, 240, 255, 0.1);
+  background: #000000;
+  border-left: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(0, 240, 255, 0.35);
+  background: rgba(56, 189, 248, 0.3);
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #00F0FF;
-  box-shadow: 0 0 10px #00F0FF;
+  background: #38BDF8;
+  box-shadow: 0 0 10px #38BDF8;
 }
 
-/* React Flow Overrides */
+/* React Flow Dark Styling Overrides */
 .react-flow__renderer {
   background: transparent !important;
 }
@@ -218,24 +197,23 @@
 }
 
 .react-flow__handle {
-  background: #00F0FF !important;
+  background: #38BDF8 !important;
   width: 8px !important;
   height: 8px !important;
-  border: 1px solid #030712 !important;
+  border: 1px solid #000000 !important;
 }
 
 .react-flow__controls {
-  background: rgba(15, 23, 42, 0.85) !important;
-  backdrop-filter: blur(16px) !important;
-  border: 1px solid rgba(0, 240, 255, 0.25) !important;
+  background: rgba(15, 23, 42, 0.8) !important;
+  backdrop-filter: blur(12px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
   border-radius: 12px !important;
-  box-shadow: 0 0 20px rgba(0, 240, 255, 0.15) !important;
 }
 
 .react-flow__controls-button {
   background: transparent !important;
-  border-bottom: 1px solid rgba(0, 240, 255, 0.15) !important;
-  fill: #00F0FF !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  fill: #38BDF8 !important;
 }
 
 /* Print Optimization */
