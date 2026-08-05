@@ -39,7 +39,6 @@ const NAV_ITEMS: NavItem[] = [
   { name: 'Watchtower Mode', href: '/watchtower', icon: Radio, badge: 'LIVE', accent: 'pink' },
   { name: 'Explainable AI', href: '/explainable-ai', icon: BrainCircuit },
   { name: 'AI Orchestration', href: '/settings', icon: Settings },
-  { name: 'Auth / Security', href: '/login', icon: ShieldCheck, badge: 'AUTH' },
 ];
 
 export const Sidebar: React.FC = () => {
@@ -48,7 +47,7 @@ export const Sidebar: React.FC = () => {
   return (
     <aside className="w-64 border-r border-white/10 bg-black/80 backdrop-blur-xl flex flex-col justify-between select-none h-[calc(100vh-4rem)] sticky top-16 z-40 print:hidden">
       {/* Navigation List */}
-      <div className="py-4 px-3 space-y-1 overflow-y-auto">
+      <div className="py-4 px-3 space-y-1 overflow-y-auto no-scrollbar">
         <div className="px-3 pb-2 text-[10px] font-mono uppercase tracking-widest text-white/40 font-semibold flex items-center justify-between">
           <span>INVESTIGATION MODULES</span>
           <ShieldCheck className="w-3.5 h-3.5 text-white/50" />
