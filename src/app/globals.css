@@ -4,80 +4,173 @@
 
 @layer base {
   :root {
-    --bg-main: #000000;
+    --bg-main: #030712;
     --card-bg: rgba(15, 23, 42, 0.75);
-    --card-secondary: rgba(19, 29, 49, 0.8);
-    --border-color: rgba(30, 41, 59, 0.8);
-    --primary-cyan: #00E5FF;
-    --secondary-pink: #FF006E;
-    --accent-purple: #8B5CF6;
-    --text-main: #F8FAFC;
+    --card-hover: rgba(30, 41, 59, 0.85);
+    --border-color: rgba(56, 189, 248, 0.2);
+    --border-glow: rgba(0, 240, 255, 0.5);
+    --primary-cyan: #00F0FF;
+    --primary-purple: #A855F7;
+    --primary-crimson: #FF0055;
+    --text-main: #FFFFFF;
     --text-muted: #94A3B8;
   }
 
   body {
-    background-color: #000000;
-    color: #F8FAFC;
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: #030712;
+    color: #FFFFFF;
+    font-family: var(--font-jakarta), 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
     overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-outfit), 'Outfit', sans-serif;
+  }
+
+  code, pre, .font-mono {
+    font-family: var(--font-mono), 'JetBrains Mono', monospace;
   }
 }
 
-/* Tactical Animated Grid Overlay */
+/* Global Selection */
+::selection {
+  background-color: #00F0FF;
+  color: #000000;
+}
+
+/* Unique ARGUS Hexagonal & Cyber Grid Backdrop */
 .cyber-grid-bg {
-  background-color: #000000;
+  background-color: #030712;
   background-image: 
-    linear-gradient(to right, rgba(0, 229, 255, 0.04) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(0, 229, 255, 0.04) 1px, transparent 1px);
-  background-size: 40px 40px;
+    radial-gradient(ellipse at 50% 15%, rgba(0, 240, 255, 0.12) 0%, transparent 60%),
+    radial-gradient(circle at 85% 80%, rgba(168, 85, 247, 0.08) 0%, transparent 55%),
+    linear-gradient(to right, rgba(0, 240, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 240, 255, 0.04) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 40px 40px, 40px 40px;
   background-position: center center;
 }
 
-/* Dense Dot Grid Variant */
-.cyber-dot-bg {
-  background-color: #000000;
-  background-image: radial-gradient(rgba(0, 229, 255, 0.12) 1px, transparent 1px);
-  background-size: 24px 24px;
+/* Unique ARGUS Glassmorphic Cyber Panels with Tactical Corner Glows */
+.glass-panel, .glass-card {
+  position: relative;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.8) 0%, rgba(10, 15, 30, 0.9) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 240, 255, 0.18);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.8), inset 0 1px 0 0 rgba(255, 255, 255, 0.08);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Pure Black Glassmorphic Card */
-.glass-panel {
-  background: rgba(15, 23, 42, 0.75);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border: 1px solid rgba(30, 41, 59, 0.8);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5), inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+.glass-panel:hover, .glass-card:hover {
+  border-color: rgba(0, 240, 255, 0.45);
+  box-shadow: 0 12px 35px -10px rgba(0, 240, 255, 0.22), inset 0 1px 0 0 rgba(0, 240, 255, 0.15);
+  transform: translateY(-2px);
 }
 
 .glass-panel-glow {
-  background: rgba(15, 23, 42, 0.8);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(0, 229, 255, 0.3);
-  box-shadow: 0 0 25px rgba(0, 229, 255, 0.15), inset 0 0 10px rgba(0, 229, 255, 0.05);
+  background: linear-gradient(135deg, rgba(0, 240, 255, 0.12) 0%, rgba(15, 23, 42, 0.85) 100%);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+  border: 1px solid rgba(0, 240, 255, 0.5);
+  box-shadow: 0 0 30px rgba(0, 240, 255, 0.2), inset 0 0 15px rgba(0, 240, 255, 0.1);
 }
 
 .glass-panel-pink {
-  background: rgba(19, 29, 49, 0.85);
-  backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 0, 110, 0.4);
-  box-shadow: 0 0 25px rgba(255, 0, 110, 0.18), inset 0 0 10px rgba(255, 0, 110, 0.05);
+  background: linear-gradient(135deg, rgba(255, 0, 85, 0.12) 0%, rgba(15, 23, 42, 0.85) 100%);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+  border: 1px solid rgba(255, 0, 85, 0.5);
+  box-shadow: 0 0 30px rgba(255, 0, 85, 0.22), inset 0 0 15px rgba(255, 0, 85, 0.1);
 }
 
-/* Glowing Neon Text */
+/* Tactical Corner Brackets for High-End Cyber aesthetic */
+.corner-brackets {
+  position: relative;
+}
+
+.corner-brackets::before,
+.corner-brackets::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-color: rgba(0, 240, 255, 0.6);
+  pointer-events: none;
+}
+
+.corner-brackets::before {
+  top: 0;
+  left: 0;
+  border-top: 2px solid;
+  border-left: 2px solid;
+}
+
+.corner-brackets::after {
+  bottom: 0;
+  right: 0;
+  border-bottom: 2px solid;
+  border-right: 2px solid;
+}
+
+/* Rich Neon Typography */
 .text-cyan-glow {
-  color: #00E5FF;
-  text-shadow: 0 0 10px rgba(0, 229, 255, 0.5), 0 0 20px rgba(0, 229, 255, 0.2);
-}
-
-.text-pink-glow {
-  color: #FF006E;
-  text-shadow: 0 0 10px rgba(255, 0, 110, 0.6), 0 0 20px rgba(255, 0, 110, 0.25);
+  color: #00F0FF;
+  text-shadow: 0 0 12px rgba(0, 240, 255, 0.6), 0 0 25px rgba(0, 240, 255, 0.3);
 }
 
 .text-purple-glow {
-  color: #8B5CF6;
-  text-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+  color: #A855F7;
+  text-shadow: 0 0 12px rgba(168, 85, 247, 0.6);
+}
+
+.text-crimson-glow {
+  color: #FF0055;
+  text-shadow: 0 0 12px rgba(255, 0, 85, 0.7);
+}
+
+/* Unique Cybernetic Buttons */
+.btn-cyber-primary {
+  background: linear-gradient(135deg, #00F0FF 0%, #0077FF 100%);
+  color: #030712;
+  font-weight: 700;
+  border-radius: 9999px;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-cyber-primary:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 0 30px rgba(0, 240, 255, 0.65);
+}
+
+.btn-cyber-purple {
+  background: linear-gradient(135deg, #A855F7 0%, #6366F1 100%);
+  color: #FFFFFF;
+  font-weight: 700;
+  border-radius: 9999px;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-cyber-purple:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 0 30px rgba(168, 85, 247, 0.65);
+}
+
+.btn-cyber-outline {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(0, 240, 255, 0.3);
+  color: #00F0FF;
+  font-weight: 600;
+  border-radius: 9999px;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-cyber-outline:hover {
+  background: rgba(0, 240, 240, 0.15);
+  border-color: rgba(0, 240, 255, 0.6);
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.25);
+  transform: translateY(-1px);
 }
 
 /* Radar Sweep Beam */
@@ -87,29 +180,10 @@
   left: 50%;
   width: 50%;
   height: 50%;
-  background: conic-gradient(from 0deg at 0% 0%, rgba(0, 229, 255, 0.4) 0deg, rgba(0, 229, 255, 0) 60deg);
+  background: conic-gradient(from 0deg at 0% 0%, rgba(0, 240, 255, 0.4) 0deg, rgba(0, 240, 255, 0) 65deg);
   transform-origin: 0% 0%;
   animation: radarSweep 5s linear infinite;
   pointer-events: none;
-}
-
-/* Scanline Effect */
-.scanline-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    to bottom,
-    rgba(255,255,255,0),
-    rgba(255,255,255,0) 50%,
-    rgba(0, 229, 255, 0.03) 50%,
-    rgba(0, 229, 255, 0.03)
-  );
-  background-size: 100% 4px;
-  pointer-events: none;
-  opacity: 0.6;
 }
 
 /* Custom Tactical Scrollbar */
@@ -119,45 +193,80 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #000000;
-  border-left: 1px solid rgba(30, 41, 59, 0.5);
+  background: #030712;
+  border-left: 1px solid rgba(0, 240, 255, 0.1);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(0, 229, 255, 0.3);
+  background: rgba(0, 240, 255, 0.35);
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #00E5FF;
-  box-shadow: 0 0 10px #00E5FF;
+  background: #00F0FF;
+  box-shadow: 0 0 10px #00F0FF;
 }
 
-/* React Flow Dark Styling Overrides */
+/* React Flow Overrides */
 .react-flow__renderer {
   background: transparent !important;
 }
 
 .react-flow__node {
-  border-radius: 8px;
-  color: #F8FAFC;
+  border-radius: 12px;
+  color: #FFFFFF;
 }
 
 .react-flow__handle {
-  background: #00E5FF !important;
+  background: #00F0FF !important;
   width: 8px !important;
   height: 8px !important;
-  border: 1px solid #000000 !important;
+  border: 1px solid #030712 !important;
 }
 
 .react-flow__controls {
-  background: rgba(15, 23, 42, 0.8) !important;
-  border: 1px solid rgba(30, 41, 59, 0.8) !important;
-  box-shadow: 0 0 15px rgba(0, 229, 255, 0.2) !important;
+  background: rgba(15, 23, 42, 0.85) !important;
+  backdrop-filter: blur(16px) !important;
+  border: 1px solid rgba(0, 240, 255, 0.25) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.15) !important;
 }
 
 .react-flow__controls-button {
   background: transparent !important;
-  border-bottom: 1px solid rgba(30, 41, 59, 0.8) !important;
-  fill: #00E5FF !important;
+  border-bottom: 1px solid rgba(0, 240, 255, 0.15) !important;
+  fill: #00F0FF !important;
+}
+
+/* Print Optimization */
+@media print {
+  header, aside, .print\:hidden {
+    display: none !important;
+  }
+
+  body, main {
+    background: #ffffff !important;
+    color: #000000 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .printable-report {
+    font-family: 'Times New Roman', Times, serif !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 20mm !important;
+    margin: 0 !important;
+    width: 100% !important;
+  }
+
+  .printable-report * {
+    color: #000000 !important;
+    background: transparent !important;
+    border-color: #000000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
 }
