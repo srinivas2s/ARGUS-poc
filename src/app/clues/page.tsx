@@ -17,7 +17,7 @@ import {
 import { MOCK_CLUES } from '@/lib/mockData';
 import { ClueCategory } from '@/types';
 
-const CATEGORIES: { id: ClueCategory | 'ALL'; name: string; icon: React.ElementType }[] = [
+const CATEGORIES: { id: ClueCategory | 'ALL'; name: string; icon: any }[] = [
   { id: 'ALL', name: 'All Clues', icon: SearchCode },
   { id: 'Suspects', name: 'Suspects', icon: UserCheck },
   { id: 'Locations', name: 'Locations', icon: MapPin },
@@ -48,9 +48,9 @@ export default function CluesPage() {
         <div>
           <div className="flex items-center space-x-2 text-cyan-400 font-mono text-xs font-semibold">
             <SearchCode className="w-4 h-4 text-cyan-400" />
-            <span>KERALA POLICE CLUE MATRIX</span>
+            <span>ARGUS FORENSIC CLUE MATRIX</span>
           </div>
-          <h1 className="text-2xl font-extrabold text-white font-mono mt-0.5">
+          <h1 className="text-2xl font-extrabold text-white font-mono mt-0.5 text-white-glow">
             Categorized Forensic Clue Board
           </h1>
           <p className="text-xs text-slate-400 font-mono">
