@@ -27,16 +27,18 @@ export const AuthGuard: React.FC<{ children: React.ReactNode }> = ({ children })
     if (isLoaded) {
       if (!argusStore.user && pathname !== '/login') {
         router.push('/login');
+      } else if (argusStore.user && pathname === '/login') {
+        router.push('/select-case');
       }
     }
   }, [isLoaded, user, pathname, router]);
 
-  // If on login page, render full screen login without header/sidebar
-  if (pathname === '/login') {
+  // Full-screen standalone pages without standard header/sidebar navigation
+  if (pathname === '/login' || pathname === '/select-case') {
     return <>{children}</>;
   }
 
-  // If checking authentication state before redirect
+  // Waiting for state initialization before routing
   if (!isLoaded || (!user && pathname !== '/login')) {
     return (
       <div className="min-h-screen bg-black flex items-center justify-center font-mono text-xs text-sky-400">
