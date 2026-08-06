@@ -221,10 +221,10 @@ export default function ReportsPage() {
           </h2>
           <div className="grid grid-cols-2 gap-2 text-xs">
             {argusStore.evidence.map((ev) => (
-              <div key={ev.id} className="p-2 border border-black space-y-0.5">
-                <div className="font-bold">{ev.title}</div>
-                <div className="font-mono text-[10px]">SHA-256: {ev.hash}</div>
-                <div className="text-[10px]">Source: {ev.source}</div>
+              <div key={ev.id} className="p-2 border border-black space-y-0.5 min-w-0 overflow-hidden">
+                <div className="font-bold truncate">{ev.title}</div>
+                <div className="font-mono text-[10px] break-all leading-snug">SHA-256: {ev.hash}</div>
+                <div className="text-[10px] truncate">Source: {ev.source}</div>
               </div>
             ))}
           </div>
