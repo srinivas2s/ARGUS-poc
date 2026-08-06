@@ -8,7 +8,7 @@ import {
   ArrowRight, 
   CheckCircle2, 
   AlertCircle, 
-  FolderLock
+  Folder
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { argusStore, AVAILABLE_CASES } from '@/lib/store';
@@ -36,7 +36,7 @@ export default function SelectCasePage() {
           className="text-center space-y-3"
         >
           <div className="w-14 h-14 rounded-full border border-white/20 bg-white/5 flex items-center justify-center mx-auto shadow-xl">
-            <FolderLock className="w-7 h-7 text-white" />
+            <Folder className="w-7 h-7 text-white" />
           </div>
           <div className="space-y-1">
             <span className="text-xs font-mono uppercase tracking-widest text-sky-400 font-semibold">
