@@ -6,10 +6,9 @@ import {
   AlertTriangle, 
   HelpCircle, 
   Clock, 
-  Network, 
-  FileQuestion, 
-  RefreshCw,
-  PlusCircle
+  Network,
+  RotateCcw,
+  Plus
 } from 'lucide-react';
 import { argusStore } from '@/lib/store';
 import { ContradictionEngine } from '@/engines/contradiction-engine';
@@ -102,7 +101,7 @@ export default function ReverseInvestigationPage() {
           onClick={() => setGaps(INITIAL_GAPS)}
           className="px-4 py-2 rounded-xl bg-sky-500/20 hover:bg-sky-500/30 border border-sky-500/40 text-sky-300 text-xs font-bold transition-all flex items-center space-x-2 cursor-pointer"
         >
-          <RefreshCw className="w-4 h-4" />
+          <RotateCcw className="w-4 h-4" />
           <span>RE-SCAN GAPS</span>
         </button>
       </div>
@@ -166,7 +165,7 @@ export default function ReverseInvestigationPage() {
 
             <div className="pt-2 border-t border-white/10 flex items-center justify-between text-[11px]">
               <div className="flex items-center space-x-2 text-sky-300">
-                <PlusCircle className="w-3.5 h-3.5 text-sky-400" />
+                <Plus className="w-3.5 h-3.5 text-sky-400" />
                 <span>PROBE ACTION: {gap.suggestedProbe}</span>
               </div>
               <span className="text-white/40">GAP ID: {gap.id}</span>

@@ -8,8 +8,7 @@ import {
   UserCheck, 
   Activity, 
   Network, 
-  ShieldAlert,
-  Dna
+  ShieldAlert
 } from 'lucide-react';
 import { argusStore } from '@/lib/store';
 
@@ -40,7 +39,7 @@ export const InvestigationDNA: React.FC = () => {
       {/* Header Badge */}
       <div className="flex items-center justify-between border-b border-white/10 pb-3">
         <div className="flex items-center space-x-2 text-sky-400 font-bold text-xs tracking-wider">
-          <Dna className="w-4 h-4 text-sky-400 animate-pulse" />
+          <Activity className="w-4 h-4 text-sky-400 animate-pulse" />
           <span>INVESTIGATION DNA PROFILE</span>
         </div>
         <div className="flex items-center space-x-2 text-[10px]">
