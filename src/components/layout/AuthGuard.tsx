@@ -25,10 +25,8 @@ export const AuthGuard: React.FC<{ children: React.ReactNode }> = ({ children })
 
   useEffect(() => {
     if (isLoaded) {
-      if (!argusStore.user && pathname !== '/login') {
+      if (!argusStore.user && pathname !== '/login' && pathname !== '/') {
         router.push('/login');
-      } else if (argusStore.user && pathname === '/login') {
-        router.push('/select-case');
       }
     }
   }, [isLoaded, user, pathname, router]);

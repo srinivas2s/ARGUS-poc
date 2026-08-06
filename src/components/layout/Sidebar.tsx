@@ -17,7 +17,8 @@ import {
   Settings,
   ChevronRight,
   ShieldCheck,
-  Search
+  Search,
+  Download
 } from 'lucide-react';
 import { argusStore } from '@/lib/store';
 
@@ -31,6 +32,7 @@ interface NavItem {
 
 const NAV_ITEMS: NavItem[] = [
   { name: 'Dashboard', href: '/dashboard', icon: LayoutDashboard },
+  { name: 'Evidence Intake', href: '/case-intake', icon: Download, badge: 'INTAKE', accent: 'cyan' },
   { name: 'War Room', href: '/war-room', icon: Crosshair, badge: 'MAIN', accent: 'cyan' },
   { name: 'Clue Board', href: '/clues', icon: SearchCode, badge: '8 CLUES' },
   { name: 'Connection Map', href: '/connections', icon: Network, badge: '9 NODES', accent: 'cyan' },

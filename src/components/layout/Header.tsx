@@ -63,7 +63,7 @@ export const Header: React.FC = () => {
     <header className="h-16 border-b border-white/10 bg-black/80 backdrop-blur-xl sticky top-0 z-50 flex items-center justify-between px-6 select-none print:hidden gap-4 overflow-visible">
       {/* Left Branding & Interactive Case Selector */}
       <div className="flex items-center space-x-3 shrink-0 whitespace-nowrap">
-        <Link href="/" className="flex items-center space-x-2.5 group shrink-0">
+        <Link href="/select-case" className="flex items-center space-x-2.5 group shrink-0">
           <div className="w-8 h-8 rounded-full border border-white/20 bg-white/5 flex items-center justify-center group-hover:scale-105 transition-transform shrink-0">
             <ShieldAlert className="w-4 h-4 text-white" />
           </div>
